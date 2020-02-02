@@ -1,0 +1,35 @@
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>商品列表信息</title>
+</head>
+<body>
+<table border="1">
+    <tr>
+        <td>商品标题</td>
+        <td>商品价格</td>
+        <td>审核状态</td>
+        <td>商品状态</td>
+        <td>库存</td>
+        <td>操作</td>
+    </tr>
+    <tr th:each="productInfo: ${list}">
+        <td><span th:text="${productInfo.producttitle}"></span></td>
+        <td><span th:text="${productInfo.productprice}"></span></td>
+        <td><span th:switch="${productInfo.auditstate}"><span th:case="0">未审核</span><span th:case="1">审核通过</span><span th:case="2">审核不通过</span></span></td>
+        <td><span th:switch="${productInfo.proudctstatus}"><span th:case="0">未上架</span><span th:case="1">已上架</span><span th:case="2">已下架</span></span></td>
+        <td><span th:text="${productInfo.stocknum}"></span></td>
+        <td>
+            <span th:switch="${productInfo.auditstate}">
+                <span th:case=0>
+                    <a th:href="@{/product/approval(id=${productInfo.id},auditstate=1)}">审核通过</a>||<a th:href="@{/product/approval(id=${productInfo.id},auditstate=2)}">审核不通过</a>
+                </span>
+                <span th:case=1>
+                    <a th:href="@{/product/updateStatus(id=${productInfo.id},state=1)}">上架</a>||<a th:href="@{/product/updateStatus(id=${productInfo.id},state=2)}">下架</a>
+                </span>
+            </span>
+            </td>
+    </tr>
+</table>
+</body>
+</html>

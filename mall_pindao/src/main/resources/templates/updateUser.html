@@ -1,0 +1,23 @@
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form action="updateUserById" method="post">
+    <input th:type="hidden" th:value="${userinfo.id}" th:name="id">
+    账号：<span th:text="${userinfo.account}"></span><br/>
+    密码：<span th:text="${userinfo.passwordplaintext}"></span><br/>
+    姓名：<span th:text="${userinfo.name}"></span><br/>
+    年龄：<input th:name="age" th:value="${userinfo.age}"/><br/>
+    地址：<input th:name="address" th:value="${userinfo.address}"><br/>
+    手机号：<input th:name="telphone" th:value="${userinfo.telphone}"><br/>
+    qq：<input th:name="qq" th:value="${userinfo.qq}"><br/>
+    微信：<input th:name="weixin" th:value="${userinfo.weixin}"><br/>
+    邮箱：<input th:name="email" th:value="${userinfo.email}"><br/>
+    性别：<span th:switch="${userinfo.sex}"><span th:case="1">男</span><span th:case="2">女</span></span><br/>
+    生日：<input th:name="birthday" th:value="${userinfo.birthday}"/><br/>
+    <input th:type="submit" th:value="提交"></input>
+</form>
+</body>
+</html>

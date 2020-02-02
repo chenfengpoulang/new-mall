@@ -1,0 +1,26 @@
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>用户列表信息</title>
+</head>
+<body>
+<table border="1">
+    <tr>
+        <td>账号</td>
+        <td>年龄</td>
+        <td>性别</td>
+        <td>地址</td>
+        <td>生日</td>
+        <td>操作</td>
+    </tr>
+    <tr th:each="user: ${list}">
+        <td><span th:text="${user.account}"></span></td>
+        <td><span th:text="${user.age}"></span></td>
+        <td><span th:switch="${user.sex}"><span th:case="1">男</span><span th:case="2">女</span></span></td>
+        <td><span th:text="${user.address}"></span></td>
+        <td><span th:text="${user.birthday}"></span></td>
+        <td><a th:href="@{/userinfo/findUserById(id=${user.id})}">查看</a>|| <a th:href="@{/userinfo/toupdateUserById(id=${user.id})}">修改</a></td>
+    </tr>
+</table>
+</body>
+</html>

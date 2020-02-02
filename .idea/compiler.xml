@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="mall_search" />
+        <module name="springboottest" />
+        <module name="mall_product" />
+        <module name="mall_merchant" />
+        <module name="mall_orderinfo" />
+        <module name="mall_registerCenter" />
+        <module name="mall_user" />
+        <module name="mall_producttype" />
+        <module name="mall_pindao" />
+        <module name="common" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="common" target="1.8" />
+      <module name="mall_merchant" target="1.8" />
+      <module name="mall_orderinfo" target="1.8" />
+      <module name="mall_pindao" target="1.8" />
+      <module name="mall_product" target="1.8" />
+      <module name="mall_producttype" target="1.8" />
+      <module name="mall_registerCenter" target="1.8" />
+      <module name="mall_search" target="1.8" />
+      <module name="mall_user" target="1.8" />
+      <module name="new-mall" target="1.8" />
+      <module name="springboottest" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="common" options="-parameters" />
+      <module name="mall_merchant" options="-parameters" />
+      <module name="mall_orderinfo" options="-parameters" />
+      <module name="mall_pindao" options="-parameters" />
+      <module name="mall_product" options="-parameters" />
+      <module name="mall_producttype" options="-parameters" />
+      <module name="mall_registerCenter" options="-parameters" />
+      <module name="mall_search" options="-parameters" />
+      <module name="mall_user" options="-parameters" />
+      <module name="new-mall" options="-parameters" />
+      <module name="springboottest" options="-parameters" />
+    </option>
+  </component>
+</project>

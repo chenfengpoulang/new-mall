@@ -1,0 +1,17 @@
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form action="updateOrderInfoById" method="post">
+    <input th:type="hidden" th:name="id" th:value="${ordermain.id}"></input>
+    用户id：<span th:text="${ordermain.userid}"></span><br/>
+    支付金额：<span th:text="${ordermain.payamount}"></span><br/>
+    收货人地址：<input th:value="${ordermain.consigneeadress}" th:name="consigneeadress"><br/>
+    收货人电话：<input th:value="${ordermain.consigneephone}" th:name="consigneephone"><br/>
+    收货人姓名：<input th:value="${ordermain.consigneename}" th:name="consigneename"><br/>
+    <input th:type="submit" th:value="提交"></input>
+</form>
+</body>
+</html>

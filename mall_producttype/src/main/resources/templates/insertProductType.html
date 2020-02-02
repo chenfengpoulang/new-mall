@@ -1,0 +1,16 @@
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form th:action="insert" method="post">
+    类别名称：<input th:type="text" th:name="producttypename"><br/>
+    类别描述：<input th:type="text" th:name="producttypedescription"><br/>
+    类别等级：<input th:type="text" th:name="typegrade"><br/>
+    父类别：<input th:type="text" th:name="parentid"><br/>
+    <input th:type="submit" value="提交">
+</form>
+
+</body>
+</html>

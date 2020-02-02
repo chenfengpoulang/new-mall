@@ -1,0 +1,20 @@
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>商品类别列表信息</title>
+</head>
+<body>
+<table border="1">
+    <tr>
+        <td>商品类别名称</td>
+        <td>商品类别等级</td>
+        <td>操作</td>
+    </tr>
+    <tr th:each="productTypeInfo: ${list}">
+        <td><span th:text="${productTypeInfo.producttypename}"></span></td>
+        <td><span th:text="${productTypeInfo.typegrade}"></span></td>
+        <td><a th:href="@{/productType/findById(id=${productTypeInfo.id})}">查看</a>|| <a th:href="@{/productType/toUpdate(id=${productTypeInfo.id})}">修改</a></td>
+    </tr>
+</table>
+</body>
+</html>

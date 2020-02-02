@@ -1,0 +1,14 @@
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form>
+    类别名称：<span th:text="${productTypeInfo.producttypename}"></span><br/>
+    类别描述：<span th:text="${productTypeInfo.producttypedescription}"></span><br/>
+    类别等级：<span th:text="${productTypeInfo.typegrade}"></span><br/>
+    父类别：<span th:text="${parent.producttypename}"></span><br/>
+</form>
+</body>
+</html>

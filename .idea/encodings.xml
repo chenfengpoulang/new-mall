@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/springboottest" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/youfancommon" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/youfands_merchant" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/youfands_orderinfo" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/youfands_pindao" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/youfands_product" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/youfands_producttype" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/youfands_registerCenter" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/youfands_search" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/youfands_user" charset="UTF-8" />
+  </component>
+</project>

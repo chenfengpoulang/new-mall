@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.mall.mappers.ProductTypeMapper">
+
+    <insert id="insertProductType" parameterType="com.mall.entity.ProductTypeInfo">
+        <selectKey keyProperty="id" order="AFTER" resultType="java.lang.Integer">
+            SELECT LAST_INSERT_ID()
+        </selectKey>
+        insert into youfands_producttype(producttypename,producttypedescription,typegrade,parentid) values(#{producttypename},#{producttypedescription},#{typegrade},#{parentid})
+    </insert>
+
+    <select id="findProductTypeById" parameterType="java.lang.Long" resultType="com.mall.entity.ProductTypeInfo">
+      select * from youfands_producttype where id = #{id}
+  </select>
+
+    <update id="updateProductTypeById" parameterType="com.mall.entity.ProductTypeInfo">
+        update youfands_producttype set producttypename=#{producttypename},producttypedescription=#{producttypedescription} where id=#{id}
+   </update>
+
+
+    <select id="findProductTypeByVo" parameterType="com.mall.vo.ProductTypeInfoVo" resultType="com.mall.entity.ProductTypeInfo">
+        select * from youfands_producttype
+        <where>
+            <include refid="consutoql"></include>
+        </where>
+    </select>
+
+    <sql id="consutoql" >
+        <if test="constomProductTypeInfo != null">
+            <if test="constomProductTypeInfo.producttypename!=null and constomProductTypeInfo.producttypename!=''">
+                and producttypename = "${constomProductTypeInfo.producttypename}"
+            </if>
+            <if test="constomProductTypeInfo.producttypedescription!=null and constomProductTypeInfo.producttypedescription!='' ">
+                and producttypedescription = "${constomProductTypeInfo.producttypedescription}"
+            </if>
+            <if test="constomProductTypeInfo.typegrade!=null and constomProductTypeInfo.typegrade!='' ">
+                and typegrade = "${constomProductTypeInfo.typegrade}"
+            </if>
+            <if test="constomProductTypeInfo.parentid!=null and constomProductTypeInfo.parentid!='' ">
+                and parentid = "${constomProductTypeInfo.parentid}"
+            </if>
+        </if>
+    </sql>
+
+
+</mapper>

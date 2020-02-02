@@ -1,0 +1,209 @@
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+	<title>Home</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1"/>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="keywords" content="Fashionpress Responsive web template, Bootstrap Web Templates, Flat Web Templates, Andriod Compatible web template,
+Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyErricsson, Motorola web design" />
+	<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+	<link href="../css/bootstrap.css" rel="stylesheet" type="text/css" />
+	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+	<!-- Custom Theme files -->
+	<link href="../css/style.css" rel='stylesheet' type='text/css' />
+
+	<link rel="stylesheet" type="text/css" href="../css2/css/webbase.css" />
+	<link rel="stylesheet" type="text/css" href="../css2/css/pages-register.css" />
+
+	<!-- Custom Theme files -->
+	<!--webfont-->
+	<link href='https://fonts.googleapis.com/css?family=Lato:100,200,300,400,500,600,700,800,900' rel='stylesheet' type='text/css' />
+	<script type="text/javascript" src="../js/jquery-1.11.1.min.js"></script>
+	<script src="../js/responsiveslides.min.js"></script>
+	<script>
+        $(function () {
+            $("#slider").responsiveSlides({
+                auto: true,
+                nav: true,
+                speed: 500,
+                namespace: "callbacks",
+                pager: true,
+            });
+        });
+        function reg(obj){
+			var form = document.getElementById('regist');
+			form.submit();
+		}
+	</script>
+	<script type="text/javascript" src="../js/hover_pack.js"></script>
+</head>
+<body>
+<div class="header">
+	<div class="header_top">
+		<div class="container">
+			<div class="logo">
+				<a href="../index.html"><img src="../images/logo.png" alt=""/></a>
+			</div>
+			<ul class="shopping_grid">
+				<a  th:href="@{/userControl/toInsertUser}"><li>加入我们</li></a>
+				<a th:href="@{/userControl/toLogin}"><li>登录</li></a>
+				<a href="#"><li><span class="m_1">购物车</span>&nbsp;&nbsp;(0) &nbsp;<img src="../images/bag.png" alt=""/></li></a>
+				<div class="clearfix"> </div>
+			</ul>
+			<div class="clearfix"> </div>
+		</div>
+	</div>
+	<div class="h_menu4"><!-- start h_menu4 -->
+		<div class="container">
+			<a class="toggleMenu" href="#">Menu</a>
+			<ul class="nav">
+				<li class="active"><a th:href="@{/productlist/indexproduct(productypeid=-1)}" data-hover="主页">主页</a></li>
+				<li><a href="#" data-hover="关于我们">关于我们</a></li>
+				<li><a href="#" data-hover="Careers">友凡生鲜</a></li>
+				<li><a href="#" data-hover="Contact Us">友凡家电</a></li>
+				<li><a href="#" data-hover="Company Profile">友凡秒杀</a></li>
+				<li><a href="#" data-hover="Company Registration">友凡众筹</a></li>
+				<li><a href="#" data-hover="Wish List">友凡拼团</a></li>
+				<li><a href="#" data-hover="Wish List">友凡会员专场</a></li>
+			</ul>
+			<script type="text/javascript" src="js/nav.js"></script>
+		</div><!-- end h_menu4 -->
+	</div>
+</div>
+<div class="column_center">
+	<div class="container">
+		<div class="search">
+			<div class="stay">Search Product</div>
+			<div class="stay_right">
+				<input type="text" value="" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = '';}" />
+				<input type="submit" value="" />
+			</div>
+		</div>
+	</div>
+</div>
+<div class="about">
+  <div class="container">
+      <div class="register">
+		  <!--register-->
+		  <div class="registerArea">
+			  <h3>注册新用户<span class="go">我有账号，去<a th:href="@{/tologin}" target="_blank">登陆</a></span></h3>
+			  <div class="info">
+				  <form class="sui-form form-horizontal" id="regist" th:action="insertUser" method="post">
+					  <div class="control-group">
+						  <label class="control-label">用户名：</label>
+						  <div class="controls">
+							  <input type="text"  name="account" placeholder="请输入你的用户名" class="input-xfat input-xlarge">
+						  </div>
+					  </div>
+					  <div class="control-group">
+						  <label class="control-label">姓名：</label>
+						  <div class="controls">
+							  <input type="text"  name="name" placeholder="请输入你的用户名" class="input-xfat input-xlarge">
+						  </div>
+					  </div>
+					  <div class="control-group">
+						  <label class="control-label">登录密码：</label>
+						  <div class="controls">
+							  <input type="password" name="passwordplaintext" placeholder="设置登录密码" class="input-xfat input-xlarge">
+						  </div>
+					  </div>
+
+					  <div class="control-group">
+						  <label class="control-label">手机号：</label>
+						  <div class="controls">
+							  <input type="text"  name="telphone" placeholder="请输入你的手机号" class="input-xfat input-xlarge">
+						  </div>
+					  </div>
+
+					  <div class="control-group">
+						  <label class="control-label">qq：</label>
+						  <div class="controls">
+							  <input type="text"  name="qq" placeholder="请输入你的qq" class="input-xfat input-xlarge">
+						  </div>
+					  </div>
+
+					  <div class="control-group">
+						  <label class="control-label">微信：</label>
+						  <div class="controls">
+							  <input type="text"  name="weixin" placeholder="请输入你的微信" class="input-xfat input-xlarge">
+						  </div>
+					  </div>
+					  <div class="control-group">
+						  <label class="control-label">email：</label>
+						  <div class="controls">
+							  <input type="text"  name="email" placeholder="请输入你的email" class="input-xfat input-xlarge">
+						  </div>
+					  </div>
+
+					  <div class="control-group">
+						  <label class="control-label">地址：</label>
+						  <div class="controls">
+							  <input type="text"  name="address" placeholder="请输入你的地址" class="input-xfat input-xlarge">
+						  </div>
+					  </div>
+
+					  <div class="control-group">
+
+						  <div class="controls">
+							  <input name="m1" type="checkbox" value="2" checked=""><span>同意协议并注册《友凡购用户协议》</span>
+						  </div>
+					  </div>
+					  <div class="control-group">
+						  <label class="control-label"></label>
+						  <div class="controls btn-reg">
+							  <a class="sui-btn btn-block btn-xlarge btn-danger" href="javaScript:reg(this);"  >完成注册</a>
+						  </div>
+					  </div>
+				  </form>
+				  <div class="clearfix"></div>
+			  </div>
+		  </div>
+	</div>
+</div>
+<div class="footer_bg">
+</div>
+<div class="footer">
+	<div class="container">
+		<div class="col-md-3 f_grid1">
+			<h3>购物指南</h3>
+			<ul class="list">
+				<li><p>购物流程</p></li>
+				<li><p>会员介绍</p></li>
+				<li><p>生活旅行</p></li>
+				<li><p>常见问题</p></li>
+				<li><p>联系客服</p></li>
+			</ul>
+		</div>
+		<div class="col-md-3 f_grid1 f_grid2">
+			<h3>配送方式</h3>
+			<ul class="list">
+				<li><p>上门自提</p></li>
+				<li><p>211限时达</p></li>
+				<li><p>配送服务查询</p></li>
+				<li><p>配送费收取标准</p></li>
+				<li><p>海外配送</p></li>
+			</ul>
+		</div>
+		<div class="col-md-6 f_grid3">
+			<h3>支付方式</h3>
+			<ul class="list">
+				<li><p>货到付款</p></li>
+				<li><p>在线支付</p></li>
+				<li><p>分期付款</p></li>
+				<li><p>邮局汇款</p></li>
+				<li><p>公司转账</p></li>
+			</ul>
+			<div class="clearfix"> </div>
+		</div>
+	</div>
+</div>
+<div class="footer_bottom">
+	<div class="container">
+		<div class="copy">
+			<p>Copyright © 2008 - 2045  友凡youfan.com 版权所有|消费者维权热线：40045453534 经营证照|(京)网械平台备字(2017)第00125号|营业执照</p>
+		</div>
+		<div class="clearfix"> </div>
+	</div>
+</div>
+
+</body>
+</html>		

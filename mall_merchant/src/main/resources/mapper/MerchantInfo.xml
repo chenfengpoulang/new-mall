@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.mall.mappers.MerchantMapper">
+
+    <insert id="insertMerchant" parameterType="com.mall.entity.MerchantInfo">
+        <selectKey keyProperty="id" order="AFTER" resultType="java.lang.Integer">
+            SELECT LAST_INSERT_ID()
+        </selectKey>
+        insert into youfands_merchant (merchantname,merchantaccount,mechantpassword,mechantscope,auditstatus,soldout) values(#{merchantname},#{merchantaccount},#{mechantpassword},#{mechantscope},#{auditstatus},#{soldout})
+    </insert>
+
+    <select id="findMerchantById" parameterType="java.lang.Long" resultType="com.mall.entity.MerchantInfo">
+        select * from youfands_merchant
+        where id = #{id}
+    </select>
+
+    <update id="updateMerchantAuditStatus" parameterType="com.mall.entity.MerchantInfo">
+            update youfands_merchant set auditstatus = #{auditstatus} where id = #{id}
+    </update>
+
+    <update id="updateMerchantStatus" parameterType="com.mall.entity.MerchantInfo">
+            update youfands_merchant set soldout = #{soldout} where id = #{id}
+    </update>
+
+    <select id="queryByVo" parameterType="com.mall.vo.ProductInfoVo" resultType="com.mall.entity.MerchantInfo">
+        select * from youfands_merchant
+        <where>
+            <include refid="consutomsqls"></include>
+        </where>
+    </select>
+
+    <sql id="consutomsqls" >
+        <if test="constomProductInfo != null">
+            <if test="constomProductInfo.producttypeid!=null and constomProductInfo.producttypeid!=''">
+                and producttypeid = "${constomProductInfo.producttypeid}"
+            </if>
+            <if test="constomProductInfo.producttitle!=null and constomProductInfo.producttitle!='' ">
+                and producttitle = "${constomProductInfo.producttitle}"
+            </if>
+            <if test="constomProductInfo.productprice!=null and constomProductInfo.productprice!='' ">
+                and productprice = "${constomProductInfo.productprice}"
+            </if>
+            <if test="constomProductInfo.mechartid!=null and constomProductInfo.mechartid!='' ">
+                and mechartid = "${constomProductInfo.mechartid}"
+            </if>
+            <if test="constomProductInfo.auditstate!=null and constomProductInfo.auditstate!='' ">
+                and auditstate = "${constomProductInfo.auditstate}"
+            </if>
+            <if test="constomProductInfo.proudctstatus!=null and constomProductInfo.proudctstatus!='' ">
+                and proudctstatus = "${constomProductInfo.proudctstatus}"
+            </if>
+        </if>
+    </sql>
+
+    <update id="updateMerchantById" parameterType="com.mall.entity.MerchantInfo" >
+        update youfands_merchant set merchantname = #{merchantname},mechantscope=#{mechantscope} where id = #{id}
+    </update>
+</mapper>

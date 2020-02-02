@@ -1,0 +1,21 @@
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title><span th:text="${userinfo.account}"/>用户信息</title>
+</head>
+<body>
+<form >
+    账号：<span th:text="${userinfo.account}"></span><br/>
+    密码：<span th:text="${userinfo.passwordplaintext}" ></span><br/>
+    姓名：<span th:text="${userinfo.name}" ></span><br/>
+    年龄：<span th:text="${userinfo.age}" ></span><br/>
+    地址：<span th:text="${userinfo.address}" ></span><br/>
+    手机号：<span th:text="${userinfo.telphone}" ></span><br/>
+    qq：<span th:text="${userinfo.qq}" ></span><br/>
+    微信：<span th:text="${userinfo.weixin}" ></span><br/>
+    邮箱：<span th:text="${userinfo.email}" ></span><br/>
+    性别：<span th:switch="${userinfo.sex}"><span th:case="1">男</span><span th:case="2">女</span><span><br/>
+    生日：<span th:text="${userinfo.birthday}"></span><br/>
+</form>
+</body>
+</html>
