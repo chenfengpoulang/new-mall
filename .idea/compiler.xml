@@ -14,7 +14,7 @@
         <module name="mall_orderinfo" />
         <module name="mall_registerCenter" />
         <module name="mall_user" />
-        <module name="mall_producttype" />
+        <module name="mall_productType" />
         <module name="mall_pindao" />
         <module name="common" />
       </profile>
@@ -25,7 +25,7 @@
       <module name="mall_orderinfo" target="1.8" />
       <module name="mall_pindao" target="1.8" />
       <module name="mall_product" target="1.8" />
-      <module name="mall_producttype" target="1.8" />
+      <module name="mall_productType" target="1.8" />
       <module name="mall_registerCenter" target="1.8" />
       <module name="mall_search" target="1.8" />
       <module name="mall_user" target="1.8" />
@@ -40,7 +40,7 @@
       <module name="mall_orderinfo" options="-parameters" />
       <module name="mall_pindao" options="-parameters" />
       <module name="mall_product" options="-parameters" />
-      <module name="mall_producttype" options="-parameters" />
+      <module name="mall_productType" options="-parameters" />
       <module name="mall_registerCenter" options="-parameters" />
       <module name="mall_search" options="-parameters" />
       <module name="mall_user" options="-parameters" />

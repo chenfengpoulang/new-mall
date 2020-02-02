@@ -54,7 +54,7 @@
         <module>springboottest</module>
         <module>mall_user</module>
         <module>common</module>
-        <module>mall_producttype</module>
+        <module>mall_productType</module>
         <module>mall_product</module>
         <module>mall_merchant</module>
         <module>mall_orderinfo</module>

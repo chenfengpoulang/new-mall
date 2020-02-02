@@ -8,8 +8,8 @@
       <configuration>
         <webroots />
         <sourceRoots>
-          <root url="file://$MODULE_DIR$/../../new-mall/mall_producttype/src/main/java" />
-          <root url="file://$MODULE_DIR$/../../new-mall/mall_producttype/src/main/resources" />
+          <root url="file://$MODULE_DIR$/../../new-mall/mall_productType/src/main/java" />
+          <root url="file://$MODULE_DIR$/../../new-mall/mall_productType/src/main/resources" />
         </sourceRoots>
       </configuration>
     </facet>
@@ -17,11 +17,11 @@
   <component name="NewModuleRootManager" LANGUAGE_LEVEL="JDK_1_8">
     <output url="file://$MODULE_DIR$/../../new-mall/mall_producttype/target/classes" />
     <output-test url="file://$MODULE_DIR$/../../new-mall/mall_producttype/target/test-classes" />
-    <content url="file://$MODULE_DIR$/../../new-mall/mall_producttype">
-      <sourceFolder url="file://$MODULE_DIR$/../../new-mall/mall_producttype/src/main/java" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/../../new-mall/mall_producttype/src/main/resources" type="java-resource" />
-      <sourceFolder url="file://$MODULE_DIR$/../../new-mall/mall_producttype/src/test/java" isTestSource="true" />
-      <excludeFolder url="file://$MODULE_DIR$/../../new-mall/mall_producttype/target" />
+    <content url="file://$MODULE_DIR$/../../new-mall/mall_productType">
+      <sourceFolder url="file://$MODULE_DIR$/../../new-mall/mall_productType/src/main/java" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/../../new-mall/mall_productType/src/main/resources" type="java-resource" />
+      <sourceFolder url="file://$MODULE_DIR$/../../new-mall/mall_productType/src/test/java" isTestSource="true" />
+      <excludeFolder url="file://$MODULE_DIR$/../../new-mall/mall_productType/target" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
