@@ -47,5 +47,11 @@
         </if>
     </sql>
 
+    <select id="findProductById" parameterType="com.mall.entity.ProductInfo" resultType="com.mall.entity.ProductInfo">
+        select * from youfads_product where id = #{id}
+    </select>
 
+    <update id="updateProductInfo" parameterType="com.mall.entity.ProductInfo">
+        update youfads_product set producttitle = #{producttitle},productprice=#{productprice}
+    </update>
 </mapper>

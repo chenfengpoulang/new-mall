@@ -61,6 +61,8 @@
         <module>mall_pindao</module>
         <module>mall_registerCenter</module>
         <module>mall_search</module>
+        <module>mall_redisService</module>
+        <module>testEhcache</module>
     </modules>
 
     <dependencyManagement>

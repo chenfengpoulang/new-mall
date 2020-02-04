@@ -6,6 +6,7 @@ import com.mall.dao.ProductDetailDao;
 import com.mall.dao.ProductInfoDao;
 import com.mall.entity.ProductDetail;
 import com.mall.entity.ProductInfo;
+import com.mall.entity.ProductTotal;
 import com.mall.service.ProductService;
 import com.mall.service.SearchService;
 import com.mall.vo.ConstomProductInfo;
@@ -62,5 +63,20 @@ public class ProductInfoServiceImpl implements ProductService {
         ProductInfoVo productInfoVo = new ProductInfoVo();
         productInfoVo.setConstomProductInfo(constomProductInfo);
         return productInfoDao.queryByVo(productInfoVo);
+    }
+
+    @Override
+    public ProductTotal findProductById(Long id) {
+        ProductTotal productTotal = new ProductTotal();
+        ProductInfo productInfo = productInfoDao.findProductById(id);
+        ProductDetail productDetail = productDetailDao.findProductDetailByProductId(id);
+        productTotal.setProductInfo(productInfo);
+        productTotal.setProductDetail(productDetail);
+        return productTotal;
+    }
+
+    @Override
+    public ProductInfo updateProductBy(Long id, String productTile, double productPrice) {
+        return productInfoDao.updateProductInfo(id, productTile,productPrice);
     }
 }

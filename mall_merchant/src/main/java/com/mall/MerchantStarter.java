@@ -16,7 +16,7 @@ import javax.sql.DataSource;
 
 @SpringBootApplication
 @EnableEurekaClient
-@MapperScan("com.youfan.mappers")
+@MapperScan("com.mall.mappers")
 public class MerchantStarter {
 
 

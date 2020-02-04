@@ -1,32 +1,32 @@
 <html xmlns:th="http://www.thymeleaf.org">
 <head>
-<title>Home</title>
-<meta name="viewport" content="width=device-width, initial-scale=1"/>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<meta name="keywords" content="Fashionpress Responsive web template, Bootstrap Web Templates, Flat Web Templates, Andriod Compatible web template, 
+	<title>Home</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1"/>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="keywords" content="Fashionpress Responsive web template, Bootstrap Web Templates, Flat Web Templates, Andriod Compatible web template,
 Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyErricsson, Motorola web design" />
-<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
-<link href="../css/bootstrap.css" rel="stylesheet" type="text/css" />
-<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-<!-- Custom Theme files -->
-<link href="../css/style.css" rel='stylesheet' type='text/css' />
-<!-- Custom Theme files -->
-<!--webfont-->
-<link href='https://fonts.googleapis.com/css?family=Lato:100,200,300,400,500,600,700,800,900' rel='stylesheet' type='text/css' />
-<script type="text/javascript" src="../js/jquery-1.11.1.min.js"></script>
-<script src="../js/responsiveslides.min.js"></script>
-<script>
-    $(function () {
-      $("#slider").responsiveSlides({
-      	auto: true,
-      	nav: true,
-      	speed: 500,
-        namespace: "callbacks",
-        pager: true,
-      });
-    });
-</script>
-<script type="text/javascript" src="../js/hover_pack.js"></script>
+	<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+	<link href="../css/bootstrap.css" rel="stylesheet" type="text/css" />
+	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+	<!-- Custom Theme files -->
+	<link href="../css/style.css" rel='stylesheet' type='text/css' />
+	<!-- Custom Theme files -->
+	<!--webfont-->
+	<link href='https://fonts.googleapis.com/css?family=Lato:100,200,300,400,500,600,700,800,900' rel='stylesheet' type='text/css' />
+	<script type="text/javascript" src="../js/jquery-1.11.1.min.js"></script>
+	<script src="../js/responsiveslides.min.js"></script>
+	<script>
+		$(function () {
+			$("#slider").responsiveSlides({
+				auto: true,
+				nav: true,
+				speed: 500,
+				namespace: "callbacks",
+				pager: true,
+			});
+		});
+	</script>
+	<script type="text/javascript" src="../js/hover_pack.js"></script>
 </head>
 <body>
 <div class="header">
@@ -36,30 +36,30 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 				<a href="index.html"><img src="../images/logo.png"  alt=""/></a>
 			</div>
 			<ul class="shopping_grid">
-			      <a  th:href="@{/userControl/toInsertUser}"><li>加入我们</li></a>
-			      <a th:href="@{/userControl/toLogin}"><li>登录</li></a>
-			      <a href="#"><li><span class="m_1">购物车</span>&nbsp;&nbsp;(0) &nbsp;<img src="../images/bag.png" alt=""/></li></a>
-			      <div class="clearfix"> </div>
+				<a  th:href="@{/userControl/toInsertUser}"><li>加入我们</li></a>
+				<a th:href="@{/userControl/toLogin}"><li>登录</li></a>
+				<a href="#"><li><span class="m_1">购物车</span>&nbsp;&nbsp;(0) &nbsp;<img src="../images/bag.png" alt=""/></li></a>
+				<div class="clearfix"> </div>
 			</ul>
-		    <div class="clearfix"> </div>
+			<div class="clearfix"> </div>
 		</div>
 	</div>
 	<div class="h_menu4"><!-- start h_menu4 -->
 		<div class="container">
-				<a class="toggleMenu" href="#">Menu</a>
-				<ul class="nav">
-					<li class="active"><a th:href="@{/productlist/indexproduct(productypeid=-1)}" data-hover="主页">主页</a></li>
-					<li><a href="#" data-hover="关于我们">关于我们</a></li>
-					<li><a href="#" data-hover="Careers">友凡生鲜</a></li>
-					<li><a href="#" data-hover="Contact Us">友凡家电</a></li>
-					<li><a href="#" data-hover="Company Profile">友凡秒杀</a></li>
-					<li><a href="#" data-hover="Company Registration">友凡众筹</a></li>
-					<li><a href="#" data-hover="Wish List">友凡拼团</a></li>
-					<li><a href="#" data-hover="Wish List">友凡会员专场</a></li>
-				 </ul>
-				 <script type="text/javascript" src="../js/nav.js"></script>
-	      </div><!-- end h_menu4 -->
-     </div>
+			<a class="toggleMenu" href="#">Menu</a>
+			<ul class="nav">
+				<li class="active"><a th:href="@{/indexproduct?productytpeid=-1}" data-hover="主页">主页</a></li>
+				<li><a href="#" data-hover="关于我们">关于我们</a></li>
+				<li><a href="#" data-hover="Careers">友凡生鲜</a></li>
+				<li><a href="#" data-hover="Contact Us">友凡家电</a></li>
+				<li><a href="#" data-hover="Company Profile">友凡秒杀</a></li>
+				<li><a href="#" data-hover="Company Registration">友凡众筹</a></li>
+				<li><a href="#" data-hover="Wish List">友凡拼团</a></li>
+				<li><a href="#" data-hover="Wish List">友凡会员专场</a></li>
+			</ul>
+			<script type="text/javascript" src="../js/nav.js"></script>
+		</div><!-- end h_menu4 -->
+	</div>
 </div>
 <div class="slider">
 	<div class="callbacks_container">
@@ -74,145 +74,143 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 	</div>
 </div>
 <div class="column_center">
-  <div class="container">
-	<div class="search">
-	  <div class="stay">Search Product</div>
-	  <div class="stay_right">
-		  <form action="searchProduct">
-		  <input type="text" th:name="searchword" value="" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = '';}" />
-		  <input type="submit" value="" />
-		  </form>
-	  </div>
-	  <div class="clearfix"> </div>
-	</div>
-    <div class="clearfix"> </div>
-  </div>
-</div>
-<div class="main">
-  <div class="content_top">
-  	<div class="container">
-	   <div class="col-md-3 sidebar_box">
-	   	 <div class="sidebar">
-			<div class="menu_box">
-		    <h3 class="menu_head">商品分类</h3>
-				<ul class="menu">
-					<li class="item1" th:each="producttypeentry:${datamap}">
-						<a href="#" th:href="@{/productlist/indexproduct(productypeid=${producttypeentry.key.id})}" ><img class="arrow-img" src="../images/f_menu.png" alt=""/><span th:text="${producttypeentry.key.producttypename}" /></a>
-						<ul class="cute">
-							<li class="subitem1" th:each="innerpr:${producttypeentry.value}" >
-								<a href="#"><span th:text="${innerpr.producttypename}"/></a>
-							</li>
-						</ul>
-					</li>
-				</ul>
-		</div>
-				<!--initiate accordion-->
-		<script type="text/javascript">
-			$(function() {
-			    var menu_ul = $('.menu > li > ul'),
-			           menu_a  = $('.menu > li > a');
-			    menu_ul.hide();
-			    menu_a.click(function(e) {
-			        e.preventDefault();
-			        if(!$(this).hasClass('active')) {
-			            menu_a.removeClass('active');
-			            menu_ul.filter(':visible').slideUp('normal');
-			            $(this).addClass('active').next().stop(true,true).slideDown('normal');
-			        } else {
-			            $(this).removeClass('active');
-			            $(this).next().stop(true,true).slideUp('normal');
-			        }
-			    });
-			
-			});
-		</script>
-       </div>
-       <div class="tlinks">Collect from <a href="http://www.youfan.com/" >友凡商城</a></div>
-		    <div class="delivery">
-				<img src="../images/delivery.jpg" class="img-responsive" alt=""/>
-				<h3>Delivering</h3>
-				<h4>World Wide</h4>
+	<div class="container">
+		<div class="search">
+			<div class="stay">Search Product</div>
+			<div class="stay_right">
+				<input type="text" value="" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = '';}" />
+				<input type="submit" value="" />
 			</div>
-			<div class="twitter">
-			   <h3>友凡商城,连接世界,方便你我</h3>
-			   <ul class="twt1">
-			   	  <i class="twt"> </i>
-			   	  <li class="twt1_desc"><span class="m_1">@youfan </span> <span class="m_1"> electronic emporium  </span></li>
-			   	  <div class="clearfix"> </div>
-			   </ul>
-			   <ul class="twt1">
-			   	  <i class="twt"> </i>
-			   	  <li class="twt1_desc"><span class="m_1">There are many</span> variations of passages of Lorem Ipsum available, but the majority <span class="m_1">have suffered</span></li>
-			   	  <div class="clearfix"> </div>
-			   </ul>
-			   <ul class="twt1">
-			   	  <i class="twt"> </i>
-			   	  <li class="twt1_desc"><span class="m_1">Lorem Ipsum</span> is simply dummy text of the printing and typesetting industry. Lorem Ipsum has <span class="m_1">been the industry's standard dummy text ever</span></li>
-			   	  <div class="clearfix"> </div>
-			   </ul>
-			</div>
-			<div class="clients">
-				<h3>Our Happy Clients</h3>
-				<h4>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae.</h4>
-			   <ul class="user">
-			   	<i class="user_icon"></i>
-			   	<li class="user_desc"><a href="#"><p>youfan shopping, Company Info</p></a></li>
-			   	<div class="clearfix"> </div>
-			   </ul>
-			</div>
-	   </div>
-		<div class="col-md-9 content_right">
-		<h4 class="head"><span class="m_2">Popular</span> Products Now</h4>
-
-		<div class="top_grid2" th:each="productlist:${productlistfinal}">
-			<div class="col-md-4 top_grid1-box1"  th:if="${#lists.size(productlist)} ge '1' " ><a th:href="@{/toproductdetail(productytpeid=-1,producid=${productlist[0].id})}" >
-				<div class="grid_1">
-					<div class="b-link-stroke b-animate-go  thickbox">
-						<img th:src="${productlist[0].productpicurl}"  alt="" th:width="260" th:height="210"/> </div>
-					<div class="grid_2">
-						<p th:utext="${productlist[0].producttitle}"></p>
-						<ul class="grid_2-bottom">
-							<li class="grid_2-left"><p th:text="${productlist[0].productprice}"></p></li>
-							<li class="grid_2-right"><div class="btn btn-primary btn-normal btn-inline " target="_self" title="Get It">立即购买</div></li>
-							<div class="clearfix"> </div>
-						</ul>
-					</div>
-				</div>
-			</a> </div>
-			<div class="col-md-4 top_grid1-box1"  th:if="${#lists.size(productlist)} ge '2' " ><a th:href="@{/toproductdetail(productytpeid=-1,producid=${productlist[1].id})}">
-				<div class="grid_1" >
-					<div class="b-link-stroke b-animate-go  thickbox">
-						<img th:src="${productlist[1].productpicurl}"  alt="" th:width="260" th:height="210"/> </div>
-					<div class="grid_2">
-						<p th:utext="${productlist[1].producttitle}"></p>
-						<ul class="grid_2-bottom">
-							<li class="grid_2-left"><p th:text="${productlist[1].productprice}"></p></li>
-							<li class="grid_2-right"><div class="btn btn-primary btn-normal btn-inline " target="_self" title="Get It">立即购买</div></li>
-							<div class="clearfix"> </div>
-						</ul>
-					</div>
-				</div>
-			</a></div>
-			<div class="col-md-4 top_grid1-box1"  th:if="${#lists.size(productlist)} ge '3' " ><a th:href="@{/toproductdetail(productytpeid=-1,producid=${productlist[2].id})}" >
-				<div class="grid_1" >
-					<div class="b-link-stroke b-animate-go  thickbox">
-						<img th:src="${productlist[2].productpicurl}"  alt="" th:width="260" th:height="210"/> </div>
-					<div class="grid_2">
-						<p th:utext="${productlist[2].producttitle}"></p>
-						<ul class="grid_2-bottom">
-							<li class="grid_2-left"><p th:text="${productlist[2].productprice}"></p></li>
-							<li class="grid_2-right"><div class="btn btn-primary btn-normal btn-inline " target="_self" title="Get It">立即购买</div></li>
-							<div class="clearfix"> </div>
-						</ul>
-					</div>
-				</div>
-			</a></div>
 			<div class="clearfix"> </div>
 		</div>
-
+		<div class="clearfix"> </div>
 	</div>
+</div>
+<div class="main">
+	<div class="content_top">
+		<div class="container">
+			<div class="col-md-3 sidebar_box">
+				<div class="sidebar">
+					<div class="menu_box">
+						<h3 class="menu_head">商品分类</h3>
+						<ul class="menu">
+							<li class="item1" th:each="producttypeentry:${datamap}">
+								<a href="#" th:href="@{/productlist/indexproduct(productypeid=${producttypeentry.key.id})}" ><img class="arrow-img" src="../images/f_menu.png" alt=""/><span th:text="${producttypeentry.key.producttypename}" /></a>
+								<ul class="cute">
+									<li class="subitem1" th:each="innerpr:${producttypeentry.value}" >
+										<a href="#"><span th:text="${innerpr.producttypename}"/></a>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+					<!--initiate accordion-->
+					<script type="text/javascript">
+						$(function() {
+							var menu_ul = $('.menu > li > ul'),
+									menu_a  = $('.menu > li > a');
+							menu_ul.hide();
+							menu_a.click(function(e) {
+								e.preventDefault();
+								if(!$(this).hasClass('active')) {
+									menu_a.removeClass('active');
+									menu_ul.filter(':visible').slideUp('normal');
+									$(this).addClass('active').next().stop(true,true).slideDown('normal');
+								} else {
+									$(this).removeClass('active');
+									$(this).next().stop(true,true).slideUp('normal');
+								}
+							});
 
-	  </div>  	    
+						});
+					</script>
+				</div>
+				<div class="tlinks">Collect from <a href="http://www.youfan.com/" >友凡商城</a></div>
+				<div class="delivery">
+					<img src="../images/delivery.jpg" class="img-responsive" alt=""/>
+					<h3>Delivering</h3>
+					<h4>World Wide</h4>
+				</div>
+				<div class="twitter">
+					<h3>友凡商城,连接世界,方便你我</h3>
+					<ul class="twt1">
+						<i class="twt"> </i>
+						<li class="twt1_desc"><span class="m_1">@youfan </span> <span class="m_1"> electronic emporium  </span></li>
+						<div class="clearfix"> </div>
+					</ul>
+					<ul class="twt1">
+						<i class="twt"> </i>
+						<li class="twt1_desc"><span class="m_1">There are many</span> variations of passages of Lorem Ipsum available, but the majority <span class="m_1">have suffered</span></li>
+						<div class="clearfix"> </div>
+					</ul>
+					<ul class="twt1">
+						<i class="twt"> </i>
+						<li class="twt1_desc"><span class="m_1">Lorem Ipsum</span> is simply dummy text of the printing and typesetting industry. Lorem Ipsum has <span class="m_1">been the industry's standard dummy text ever</span></li>
+						<div class="clearfix"> </div>
+					</ul>
+				</div>
+				<div class="clients">
+					<h3>Our Happy Clients</h3>
+					<h4>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae.</h4>
+					<ul class="user">
+						<i class="user_icon"></i>
+						<li class="user_desc"><a href="#"><p>youfan shopping, Company Info</p></a></li>
+						<div class="clearfix"> </div>
+					</ul>
+				</div>
+			</div>
+			<div class="col-md-9 content_right">
+				<h4 class="head"><span class="m_2">Popular</span> Products Now</h4>
+
+				<div class="top_grid2" th:each="productlist:${productlistfinal}">
+					<div class="col-md-4 top_grid1-box1"  th:if="${#lists.size(productlist)} ge '1' " ><a th:href="@{/productlist/findProductById(productId=${productlist[0].id})}" >
+						<div class="grid_1">
+							<div class="b-link-stroke b-animate-go  thickbox">
+								<img th:src="${productlist[0].productpicurl}"  alt="" th:width="260" th:height="210"/> </div>
+							<div class="grid_2">
+								<p th:text="${productlist[0].producttitle}"></p>
+								<ul class="grid_2-bottom">
+									<li class="grid_2-left"><p th:text="${productlist[0].productprice}"></p></li>
+									<li class="grid_2-right"><div class="btn btn-primary btn-normal btn-inline " target="_self" title="Get It">立即购买</div></li>
+									<div class="clearfix"> </div>
+								</ul>
+							</div>
+						</div>
+					</a> </div>
+					<div class="col-md-4 top_grid1-box1"  th:if="${#lists.size(productlist)} ge '2' " ><a th:href="@{/productlist/findProductById(productId=${productlist[1].id})}" >
+						<div class="grid_1" >
+							<div class="b-link-stroke b-animate-go  thickbox">
+								<img th:src="${productlist[1].productpicurl}"  alt="" th:width="260" th:height="210"/> </div>
+							<div class="grid_2">
+								<p th:text="${productlist[1].producttitle}"></p>
+								<ul class="grid_2-bottom">
+									<li class="grid_2-left"><p th:text="${productlist[1].productprice}"></p></li>
+									<li class="grid_2-right"><div class="btn btn-primary btn-normal btn-inline " target="_self" title="Get It">立即购买</div></li>
+									<div class="clearfix"> </div>
+								</ul>
+							</div>
+						</div>
+					</a></div>
+					<div class="col-md-4 top_grid1-box1"  th:if="${#lists.size(productlist)} ge '3' " ><a th:href="@{/productlist/findProductById(productId=${productlist[2].id})}" >
+						<div class="grid_1" >
+							<div class="b-link-stroke b-animate-go  thickbox">
+								<img th:src="${productlist[2].productpicurl}"  alt="" th:width="260" th:height="210"/> </div>
+							<div class="grid_2">
+								<p th:text="${productlist[2].producttitle}"></p>
+								<ul class="grid_2-bottom">
+									<li class="grid_2-left"><p th:text="${productlist[2].productprice}"></p></li>
+									<li class="grid_2-right"><div class="btn btn-primary btn-normal btn-inline " target="_self" title="Get It">立即购买</div></li>
+									<div class="clearfix"> </div>
+								</ul>
+							</div>
+						</div>
+					</a></div>
+					<div class="clearfix"> </div>
+				</div>
+
+			</div>
+
+		</div>
 	</div>
 </div>
 <div class="footer_bg">
@@ -253,12 +251,12 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 	</div>
 </div>
 <div class="footer_bottom">
-       	<div class="container">
-			<div class="copy">
-			    <p>Copyright © 2008 - 2045  友凡youfan.com 版权所有|消费者维权热线：40045453534 经营证照|(京)网械平台备字(2017)第00125号|营业执照</p>
-		    </div>
-		    <div class="clearfix"> </div>
-       	</div>
+	<div class="container">
+		<div class="copy">
+			<p>Copyright © 2008 - 2045  友凡youfan.com 版权所有|消费者维权热线：40045453534 经营证照|(京)网械平台备字(2017)第00125号|营业执照</p>
+		</div>
+		<div class="clearfix"> </div>
+	</div>
 </div>
 
 </body>

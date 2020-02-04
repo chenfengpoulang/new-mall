@@ -1,7 +1,8 @@
-package com.mall.service;
+package com.mall.service.impl;
 
 import com.mall.dao.UserDao;
 import com.mall.entity.UserInfo;
+import com.mall.service.UserService;
 import com.mall.utils.Md5Util;
 import com.mall.vo.ConstomUserInfo;
 import com.mall.vo.UserInfoVo;
@@ -39,8 +40,8 @@ public class UserServiceImpl implements UserService {
     }
 
     @Override
-    public void updateUserById(UserInfo userinfo) {
-        userDao.updateUserById(userinfo);
+    public UserInfo updateUserById(UserInfo userinfo) {
+        return userDao.updateUserById(userinfo);
     }
 
     @Override

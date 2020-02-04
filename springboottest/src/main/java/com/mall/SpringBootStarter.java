@@ -1,6 +1,5 @@
-package com.youfan;
+package com.mall;
 
-import com.mall.UserStarter;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 

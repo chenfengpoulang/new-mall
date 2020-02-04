@@ -9,5 +9,7 @@
         insert into youfands_productdetail (productid,productplace,productdescription,productbrand,productweight,productspecification,productdetaipicurl) values (#{productid},#{productplace},#{productdescription},#{productbrand},#{productweight},#{productspecification},#{productdetaipicurl})
     </insert>
 
-
+    <select id="findProductDetailByProductId" parameterType="com.mall.entity.ProductInfo" resultType="com.mall.entity.ProductDetail">
+        select * from youfands_productdetail where productid = #{id}
+    </select>
 </mapper>

@@ -16,7 +16,7 @@ import org.springframework.transaction.PlatformTransactionManager;
 import javax.sql.DataSource;
 
 @SpringBootApplication
-@MapperScan("com.youfan.mappers")
+@MapperScan("com.mall.mappers")
 @EnableEurekaClient
 @EnableCasClient
 public class ProductTypeStarter {

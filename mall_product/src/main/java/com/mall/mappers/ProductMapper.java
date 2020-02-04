@@ -10,4 +10,6 @@ public interface ProductMapper {
     public Long updateProductAuditStatus(ProductInfo productInfo);
     public Long updateProductStatus(ProductInfo productInfo);
     public List<ProductInfo> queryByVo(ProductInfoVo productInfoVo);
+    public ProductInfo findProductById(ProductInfo productInfo);
+    public Long updateProductInfo(ProductInfo productInfo);
 }

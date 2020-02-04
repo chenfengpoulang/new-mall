@@ -10,4 +10,6 @@ public interface ProductInfoDao {
     public Long updateProductAuditStatus(ProductInfo productInfo);
     public Long updateProductStatus(ProductInfo productInfo);
     public List<ProductInfo> queryByVo(ProductInfoVo productInfoVo);
+    public ProductInfo findProductById(Long id);
+    public ProductInfo updateProductInfo(Long id, String productTile, double productPrice);
 }

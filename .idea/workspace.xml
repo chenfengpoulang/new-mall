@@ -2,23 +2,57 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="93aac11d-bc18-4384-a691-64ff53f6dbde" name="Default Changelist" comment="">
-      <change beforePath="$USER_HOME$/IdeaProjects/new-mall/mall_producttype/mall_producttype.iml" beforeDir="false" afterPath="$USER_HOME$/IdeaProjects/new-mall/mall_productType/mall_productType.iml" afterDir="false" />
-      <change beforePath="$USER_HOME$/IdeaProjects/new-mall/mall_producttype/pom.xml" beforeDir="false" afterPath="$USER_HOME$/IdeaProjects/new-mall/mall_productType/pom.xml" afterDir="false" />
-      <change beforePath="$USER_HOME$/IdeaProjects/new-mall/mall_producttype/src/main/java/com/mall/ProductTypeStarter.java" beforeDir="false" afterPath="$USER_HOME$/IdeaProjects/new-mall/mall_productType/src/main/java/com/mall/ProductTypeStarter.java" afterDir="false" />
-      <change beforePath="$USER_HOME$/IdeaProjects/new-mall/mall_producttype/src/main/java/com/mall/config/CasConfigure.java" beforeDir="false" afterPath="$USER_HOME$/IdeaProjects/new-mall/mall_productType/src/main/java/com/mall/config/CasConfigure.java" afterDir="false" />
-      <change beforePath="$USER_HOME$/IdeaProjects/new-mall/mall_producttype/src/main/java/com/mall/control/ProductTypeControl.java" beforeDir="false" afterPath="$USER_HOME$/IdeaProjects/new-mall/mall_productType/src/main/java/com/mall/control/ProductTypeControl.java" afterDir="false" />
-      <change beforePath="$USER_HOME$/IdeaProjects/new-mall/mall_producttype/src/main/java/com/mall/control/ProductTypeOutControl.java" beforeDir="false" afterPath="$USER_HOME$/IdeaProjects/new-mall/mall_productType/src/main/java/com/mall/control/ProductTypeOutControl.java" afterDir="false" />
-      <change beforePath="$USER_HOME$/IdeaProjects/new-mall/mall_producttype/src/main/java/com/mall/dao/ProductTypeDao.java" beforeDir="false" afterPath="$USER_HOME$/IdeaProjects/new-mall/mall_productType/src/main/java/com/mall/dao/ProductTypeDao.java" afterDir="false" />
-      <change beforePath="$USER_HOME$/IdeaProjects/new-mall/mall_producttype/src/main/java/com/mall/dao/impl/ProductTypeImpl.java" beforeDir="false" afterPath="$USER_HOME$/IdeaProjects/new-mall/mall_productType/src/main/java/com/mall/dao/impl/ProductTypeImpl.java" afterDir="false" />
-      <change beforePath="$USER_HOME$/IdeaProjects/new-mall/mall_producttype/src/main/java/com/mall/mappers/ProductTypeMapper.java" beforeDir="false" afterPath="$USER_HOME$/IdeaProjects/new-mall/mall_productType/src/main/java/com/mall/mappers/ProductTypeMapper.java" afterDir="false" />
-      <change beforePath="$USER_HOME$/IdeaProjects/new-mall/mall_producttype/src/main/java/com/mall/service/ProductTypeService.java" beforeDir="false" afterPath="$USER_HOME$/IdeaProjects/new-mall/mall_productType/src/main/java/com/mall/service/ProductTypeService.java" afterDir="false" />
-      <change beforePath="$USER_HOME$/IdeaProjects/new-mall/mall_producttype/src/main/java/com/mall/service/ProductTypeServiceImpl.java" beforeDir="false" afterPath="$USER_HOME$/IdeaProjects/new-mall/mall_productType/src/main/java/com/mall/service/ProductTypeServiceImpl.java" afterDir="false" />
-      <change beforePath="$USER_HOME$/IdeaProjects/new-mall/mall_producttype/src/main/resources/application.properties" beforeDir="false" afterPath="$USER_HOME$/IdeaProjects/new-mall/mall_productType/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$USER_HOME$/IdeaProjects/new-mall/mall_producttype/src/main/resources/mapper/ProductTypeInfo.xml" beforeDir="false" afterPath="$USER_HOME$/IdeaProjects/new-mall/mall_productType/src/main/resources/mapper/ProductTypeInfo.xml" afterDir="false" />
-      <change beforePath="$USER_HOME$/IdeaProjects/new-mall/mall_producttype/src/main/resources/templates/insertProductType.html" beforeDir="false" afterPath="$USER_HOME$/IdeaProjects/new-mall/mall_productType/src/main/resources/templates/insertProductType.html" afterDir="false" />
-      <change beforePath="$USER_HOME$/IdeaProjects/new-mall/mall_producttype/src/main/resources/templates/list.html" beforeDir="false" afterPath="$USER_HOME$/IdeaProjects/new-mall/mall_productType/src/main/resources/templates/list.html" afterDir="false" />
-      <change beforePath="$USER_HOME$/IdeaProjects/new-mall/mall_producttype/src/main/resources/templates/updateProductType.html" beforeDir="false" afterPath="$USER_HOME$/IdeaProjects/new-mall/mall_productType/src/main/resources/templates/updateProductType.html" afterDir="false" />
-      <change beforePath="$USER_HOME$/IdeaProjects/new-mall/mall_producttype/src/main/resources/templates/viewProductType.html" beforeDir="false" afterPath="$USER_HOME$/IdeaProjects/new-mall/mall_productType/src/main/resources/templates/viewProductType.html" afterDir="false" />
+      <change afterPath="$USER_HOME$/IdeaProjects/new-mall/.idea/libraries/Maven__net_sf_ehcache_ehcache_2_10_6.xml" afterDir="false" />
+      <change afterPath="$USER_HOME$/IdeaProjects/new-mall/common/src/main/java/com/mall/entity/ProductTotal.java" afterDir="false" />
+      <change afterPath="$USER_HOME$/IdeaProjects/new-mall/mall_pindao/src/main/java/com/mall/service/RedisService.java" afterDir="false" />
+      <change afterPath="$USER_HOME$/IdeaProjects/new-mall/mall_product/src/main/java/com/mall/service/RedisService.java" afterDir="false" />
+      <change afterPath="$USER_HOME$/IdeaProjects/new-mall/mall_product/src/main/resources/ehcache.xml" afterDir="false" />
+      <change afterPath="$USER_HOME$/IdeaProjects/new-mall/mall_redisService/pom.xml" afterDir="false" />
+      <change afterPath="$USER_HOME$/IdeaProjects/new-mall/mall_redisService/src/main/java/com/mall/RedisStarter.java" afterDir="false" />
+      <change afterPath="$USER_HOME$/IdeaProjects/new-mall/mall_redisService/src/main/java/com/mall/control/RedisController.java" afterDir="false" />
+      <change afterPath="$USER_HOME$/IdeaProjects/new-mall/mall_redisService/src/main/java/com/mall/service/RedisService.java" afterDir="false" />
+      <change afterPath="$USER_HOME$/IdeaProjects/new-mall/mall_redisService/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$USER_HOME$/IdeaProjects/new-mall/mall_user/src/main/java/com/mall/service/RedisService.java" afterDir="false" />
+      <change afterPath="$USER_HOME$/IdeaProjects/new-mall/mall_user/src/main/resources/ehcache.xml" afterDir="false" />
+      <change beforePath="$USER_HOME$/IdeaProjects/new-mall/.idea/compiler.xml" beforeDir="false" afterPath="$USER_HOME$/IdeaProjects/new-mall/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$USER_HOME$/IdeaProjects/new-mall/.idea/modules.xml" beforeDir="false" afterPath="$USER_HOME$/IdeaProjects/new-mall/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$USER_HOME$/IdeaProjects/new-mall/.idea/workspace.xml" beforeDir="false" afterPath="$USER_HOME$/IdeaProjects/new-mall/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$USER_HOME$/IdeaProjects/new-mall/mall_merchant/src/main/java/com/mall/MerchantStarter.java" beforeDir="false" afterPath="$USER_HOME$/IdeaProjects/new-mall/mall_merchant/src/main/java/com/mall/MerchantStarter.java" afterDir="false" />
+      <change beforePath="$USER_HOME$/IdeaProjects/new-mall/mall_orderinfo/src/main/java/com/mall/OrderStarter.java" beforeDir="false" afterPath="$USER_HOME$/IdeaProjects/new-mall/mall_orderinfo/src/main/java/com/mall/OrderStarter.java" afterDir="false" />
+      <change beforePath="$USER_HOME$/IdeaProjects/new-mall/mall_pindao/src/main/java/com/mall/control/ProductControl.java" beforeDir="false" afterPath="$USER_HOME$/IdeaProjects/new-mall/mall_pindao/src/main/java/com/mall/control/ProductControl.java" afterDir="false" />
+      <change beforePath="$USER_HOME$/IdeaProjects/new-mall/mall_pindao/src/main/java/com/mall/control/UserControl.java" beforeDir="false" afterPath="$USER_HOME$/IdeaProjects/new-mall/mall_pindao/src/main/java/com/mall/control/UserControl.java" afterDir="false" />
+      <change beforePath="$USER_HOME$/IdeaProjects/new-mall/mall_pindao/src/main/java/com/mall/service/ProductService.java" beforeDir="false" afterPath="$USER_HOME$/IdeaProjects/new-mall/mall_pindao/src/main/java/com/mall/service/ProductService.java" afterDir="false" />
+      <change beforePath="$USER_HOME$/IdeaProjects/new-mall/mall_pindao/src/main/resources/templates/beautiful/index.html" beforeDir="false" afterPath="$USER_HOME$/IdeaProjects/new-mall/mall_pindao/src/main/resources/templates/beautiful/index.html" afterDir="false" />
+      <change beforePath="$USER_HOME$/IdeaProjects/new-mall/mall_pindao/src/main/resources/templates/beautiful/single.html" beforeDir="false" afterPath="$USER_HOME$/IdeaProjects/new-mall/mall_pindao/src/main/resources/templates/beautiful/single.html" afterDir="false" />
+      <change beforePath="$USER_HOME$/IdeaProjects/new-mall/mall_product/mall_product.iml" beforeDir="false" afterPath="$USER_HOME$/IdeaProjects/new-mall/mall_product/mall_product.iml" afterDir="false" />
+      <change beforePath="$USER_HOME$/IdeaProjects/new-mall/mall_product/pom.xml" beforeDir="false" afterPath="$USER_HOME$/IdeaProjects/new-mall/mall_product/pom.xml" afterDir="false" />
+      <change beforePath="$USER_HOME$/IdeaProjects/new-mall/mall_product/src/main/java/com/mall/ProductStarter.java" beforeDir="false" afterPath="$USER_HOME$/IdeaProjects/new-mall/mall_product/src/main/java/com/mall/ProductStarter.java" afterDir="false" />
+      <change beforePath="$USER_HOME$/IdeaProjects/new-mall/mall_product/src/main/java/com/mall/control/ProductOutControl.java" beforeDir="false" afterPath="$USER_HOME$/IdeaProjects/new-mall/mall_product/src/main/java/com/mall/control/ProductOutControl.java" afterDir="false" />
+      <change beforePath="$USER_HOME$/IdeaProjects/new-mall/mall_product/src/main/java/com/mall/dao/ProductDetailDao.java" beforeDir="false" afterPath="$USER_HOME$/IdeaProjects/new-mall/mall_product/src/main/java/com/mall/dao/ProductDetailDao.java" afterDir="false" />
+      <change beforePath="$USER_HOME$/IdeaProjects/new-mall/mall_product/src/main/java/com/mall/dao/ProductInfoDao.java" beforeDir="false" afterPath="$USER_HOME$/IdeaProjects/new-mall/mall_product/src/main/java/com/mall/dao/ProductInfoDao.java" afterDir="false" />
+      <change beforePath="$USER_HOME$/IdeaProjects/new-mall/mall_product/src/main/java/com/mall/dao/impl/ProductDetailImpl.java" beforeDir="false" afterPath="$USER_HOME$/IdeaProjects/new-mall/mall_product/src/main/java/com/mall/dao/impl/ProductDetailImpl.java" afterDir="false" />
+      <change beforePath="$USER_HOME$/IdeaProjects/new-mall/mall_product/src/main/java/com/mall/dao/impl/ProductInfoImpl.java" beforeDir="false" afterPath="$USER_HOME$/IdeaProjects/new-mall/mall_product/src/main/java/com/mall/dao/impl/ProductInfoImpl.java" afterDir="false" />
+      <change beforePath="$USER_HOME$/IdeaProjects/new-mall/mall_product/src/main/java/com/mall/mappers/ProductDetailMapper.java" beforeDir="false" afterPath="$USER_HOME$/IdeaProjects/new-mall/mall_product/src/main/java/com/mall/mappers/ProductDetailMapper.java" afterDir="false" />
+      <change beforePath="$USER_HOME$/IdeaProjects/new-mall/mall_product/src/main/java/com/mall/mappers/ProductMapper.java" beforeDir="false" afterPath="$USER_HOME$/IdeaProjects/new-mall/mall_product/src/main/java/com/mall/mappers/ProductMapper.java" afterDir="false" />
+      <change beforePath="$USER_HOME$/IdeaProjects/new-mall/mall_product/src/main/java/com/mall/service/ProductService.java" beforeDir="false" afterPath="$USER_HOME$/IdeaProjects/new-mall/mall_product/src/main/java/com/mall/service/ProductService.java" afterDir="false" />
+      <change beforePath="$USER_HOME$/IdeaProjects/new-mall/mall_product/src/main/java/com/mall/service/impl/ProductInfoServiceImpl.java" beforeDir="false" afterPath="$USER_HOME$/IdeaProjects/new-mall/mall_product/src/main/java/com/mall/service/impl/ProductInfoServiceImpl.java" afterDir="false" />
+      <change beforePath="$USER_HOME$/IdeaProjects/new-mall/mall_product/src/main/resources/application.properties" beforeDir="false" afterPath="$USER_HOME$/IdeaProjects/new-mall/mall_product/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$USER_HOME$/IdeaProjects/new-mall/mall_product/src/main/resources/mapper/ProductDetailInfo.xml" beforeDir="false" afterPath="$USER_HOME$/IdeaProjects/new-mall/mall_product/src/main/resources/mapper/ProductDetailInfo.xml" afterDir="false" />
+      <change beforePath="$USER_HOME$/IdeaProjects/new-mall/mall_product/src/main/resources/mapper/ProductInfo.xml" beforeDir="false" afterPath="$USER_HOME$/IdeaProjects/new-mall/mall_product/src/main/resources/mapper/ProductInfo.xml" afterDir="false" />
+      <change beforePath="$USER_HOME$/IdeaProjects/new-mall/mall_productType/src/main/java/com/mall/ProductTypeStarter.java" beforeDir="false" afterPath="$USER_HOME$/IdeaProjects/new-mall/mall_productType/src/main/java/com/mall/ProductTypeStarter.java" afterDir="false" />
+      <change beforePath="$USER_HOME$/IdeaProjects/new-mall/mall_user/mall_user.iml" beforeDir="false" afterPath="$USER_HOME$/IdeaProjects/new-mall/mall_user/mall_user.iml" afterDir="false" />
+      <change beforePath="$USER_HOME$/IdeaProjects/new-mall/mall_user/pom.xml" beforeDir="false" afterPath="$USER_HOME$/IdeaProjects/new-mall/mall_user/pom.xml" afterDir="false" />
+      <change beforePath="$USER_HOME$/IdeaProjects/new-mall/mall_user/src/main/java/com/mall/UserStarter.java" beforeDir="false" afterPath="$USER_HOME$/IdeaProjects/new-mall/mall_user/src/main/java/com/mall/UserStarter.java" afterDir="false" />
+      <change beforePath="$USER_HOME$/IdeaProjects/new-mall/mall_user/src/main/java/com/mall/control/UserOutControl.java" beforeDir="false" afterPath="$USER_HOME$/IdeaProjects/new-mall/mall_user/src/main/java/com/mall/control/UserOutControl.java" afterDir="false" />
+      <change beforePath="$USER_HOME$/IdeaProjects/new-mall/mall_user/src/main/java/com/mall/dao/UserDao.java" beforeDir="false" afterPath="$USER_HOME$/IdeaProjects/new-mall/mall_user/src/main/java/com/mall/dao/UserDao.java" afterDir="false" />
+      <change beforePath="$USER_HOME$/IdeaProjects/new-mall/mall_user/src/main/java/com/mall/dao/impl/UserDaoImpl.java" beforeDir="false" afterPath="$USER_HOME$/IdeaProjects/new-mall/mall_user/src/main/java/com/mall/dao/impl/UserDaoImpl.java" afterDir="false" />
+      <change beforePath="$USER_HOME$/IdeaProjects/new-mall/mall_user/src/main/java/com/mall/service/UserService.java" beforeDir="false" afterPath="$USER_HOME$/IdeaProjects/new-mall/mall_user/src/main/java/com/mall/service/UserService.java" afterDir="false" />
+      <change beforePath="$USER_HOME$/IdeaProjects/new-mall/mall_user/src/main/java/com/mall/service/UserServiceImpl.java" beforeDir="false" afterPath="$USER_HOME$/IdeaProjects/new-mall/mall_user/src/main/java/com/mall/service/impl/UserServiceImpl.java" afterDir="false" />
+      <change beforePath="$USER_HOME$/IdeaProjects/new-mall/mall_user/src/main/resources/application.properties" beforeDir="false" afterPath="$USER_HOME$/IdeaProjects/new-mall/mall_user/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$USER_HOME$/IdeaProjects/new-mall/pom.xml" beforeDir="false" afterPath="$USER_HOME$/IdeaProjects/new-mall/pom.xml" afterDir="false" />
+      <change beforePath="$USER_HOME$/IdeaProjects/new-mall/springboottest/springboottest.iml" beforeDir="false" afterPath="$USER_HOME$/IdeaProjects/new-mall/springboottest/springboottest.iml" afterDir="false" />
+      <change beforePath="$USER_HOME$/IdeaProjects/new-mall/springboottest/src/main/java/com/youfan/SpringBootStarter.java" beforeDir="false" afterPath="$USER_HOME$/IdeaProjects/new-mall/springboottest/src/main/java/com/mall/SpringBootStarter.java" afterDir="false" />
+      <change beforePath="$USER_HOME$/IdeaProjects/new-mall/springboottest/src/main/java/com/youfan/control/TestControl.java" beforeDir="false" afterPath="$USER_HOME$/IdeaProjects/new-mall/springboottest/src/main/java/com/mall/control/TestControl.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -60,7 +94,7 @@
     <property name="RequestMappingsPanelWidth1" value="75" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/youfands_pindao/src/main/java/com/youfan" />
+    <property name="last_opened_file_path" value="$USER_HOME$/IdeaProjects/new-mall/mall_user/src/main/resources" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
@@ -72,18 +106,18 @@
       <recent name="$USER_HOME$/IdeaProjects" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.mall.service" />
       <recent name="com.youfan.config" />
       <recent name="com.youfan.timer" />
       <recent name="com.youfan" />
       <recent name="com.youfan.control" />
-      <recent name="com.youfan.mappers" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/youfands_pindao/src/main/java/com/youfan" />
-      <recent name="$PROJECT_DIR$/youfands_pindao/src/main/resources" />
-      <recent name="$PROJECT_DIR$/youfands_pindao/src/main/resources/templates/beautiful" />
-      <recent name="$PROJECT_DIR$/youfands_pindao/src/main/java/com/youfan/control" />
-      <recent name="$PROJECT_DIR$/youfands_pindao/src/main/java/com/youfan/service" />
+      <recent name="$USER_HOME$/IdeaProjects/new-mall/mall_user/src/main/resources" />
+      <recent name="$USER_HOME$/IdeaProjects/new-mall/mall_product/src/main/resources" />
+      <recent name="$USER_HOME$/IdeaProjects/new-mall/mall_pindao/src/main/java/com/mall/service" />
+      <recent name="$USER_HOME$/IdeaProjects/new-mall/mall_redisService/src/main/resources" />
+      <recent name="$USER_HOME$/IdeaProjects/new-mall/mall_product/src/main/java/com/mall/service" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -98,7 +132,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.PinDaoStarter">
+  <component name="RunManager" selected="Spring Boot.UserStarter">
     <configuration default="true" type="JetRunConfigurationType" factoryName="Kotlin">
       <module name="new-mall" />
       <option name="VM_PARAMETERS" />
@@ -146,78 +180,78 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="EhcacheStarter" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="testEhcache" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.youfan.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.youfan.EhcacheStarter" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="PinDaoStarter" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
       <module name="mall_pindao" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.youfan.*" />
+          <option name="PATTERN" value="com.mall.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.youfan.PinDaoStarter" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.mall.PinDaoStarter" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ProductStarter" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+    <configuration name="ProductStarter (1)" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
       <module name="mall_product" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.youfan.*" />
+          <option name="PATTERN" value="com.mall.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.youfan.ProductStarter" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.mall.ProductStarter" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ProductTypeStarter" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
-      <module name="mall_productType" />
+    <configuration name="RedisStarter" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="mall_redisService" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.youfan.*" />
+          <option name="PATTERN" value="com.mall.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.youfan.ProductTypeStarter" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.mall.RedisStarter" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="RegisterCenterStarter" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
-      <module name="mall_registerCenter" />
+    <configuration name="UserStarter" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="mall_user" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.youfan.starter.*" />
+          <option name="PATTERN" value="com.mall.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.youfan.starter.RegisterCenterStarter" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="SearchStarter (1)" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
-      <module name="mall_search" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.youfan.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.youfan.SearchStarter" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.mall.UserStarter" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Spring Boot.ProductStarter" />
-        <item itemvalue="Spring Boot.ProductTypeStarter" />
+        <item itemvalue="Spring Boot.UserStarter" />
         <item itemvalue="Spring Boot.PinDaoStarter" />
-        <item itemvalue="Spring Boot.RegisterCenterStarter" />
-        <item itemvalue="Spring Boot.SearchStarter (1)" />
+        <item itemvalue="Spring Boot.ProductStarter (1)" />
+        <item itemvalue="Spring Boot.RedisStarter" />
+        <item itemvalue="Spring Boot.EhcacheStarter" />
       </list>
     </recent_temporary>
   </component>
@@ -241,12 +275,24 @@
       <workItem from="1578483784659" duration="180000" />
       <workItem from="1578483994428" duration="158000" />
       <workItem from="1578484158335" duration="22069000" />
-      <workItem from="1580044613817" duration="6497000" />
+      <workItem from="1580044613817" duration="30739000" />
     </task>
+    <task id="LOCAL-00001" summary="项目名规范">
+      <created>1580625394075</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1580625394075</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="项目名规范" />
+    <option name="LAST_COMMIT_MESSAGE" value="项目名规范" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -265,6 +311,11 @@
           <url>file://$USER_HOME$/IdeaProjects/new-mall/mall_search/src/main/java/com/mall/utils/ElasticsearchUtil.java</url>
           <line>73</line>
           <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$USER_HOME$/IdeaProjects/new-mall/mall_product/src/main/java/com/mall/service/impl/ProductInfoServiceImpl.java</url>
+          <line>41</line>
+          <option name="timeStamp" value="4" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

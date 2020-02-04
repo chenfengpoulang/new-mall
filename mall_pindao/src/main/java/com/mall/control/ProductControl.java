@@ -2,11 +2,14 @@ package com.mall.control;
 
 import com.alibaba.fastjson.JSONObject;
 import com.mall.entity.ProductInfo;
+import com.mall.entity.ProductTotal;
 import com.mall.entity.ProductTypeInfo;
 import com.mall.page.EsPage;
 import com.mall.service.ProductService;
 import com.mall.service.ProductTypeService;
+import com.mall.service.RedisService;
 import com.mall.service.SearchService;
+import org.apache.commons.lang.StringUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -29,6 +32,9 @@ public class ProductControl {
 
     @Autowired
     private SearchService searchService;
+
+    @Autowired
+    private RedisService redisService;
 
     @RequestMapping(value = "listProduct")
     public String listProductByTypeId(long productypeid, Model model){
@@ -104,5 +110,33 @@ public class ProductControl {
         }
         model.addAttribute("productlistfinal",productlistfinal);
         return "beautiful/index";
+    }
+
+
+    @RequestMapping(value = "/findProductById")
+    public String findProductById(long productId, Model model){
+        //先查分布式redis缓存，再查本地缓存,最后再查数据库
+        String productTotalString = redisService.getStr("product:"+productId);
+        ProductTotal productTotal = null;
+        if(StringUtils.isBlank(productTotalString)){
+            productTotal = productService.findById(productId);
+            String productTotalJson = JSONObject.toJSONString(productTotal);
+            redisService.setStr("product:"+productId,productTotalJson);
+        }else {
+            productTotal = JSONObject.parseObject(productTotalString,ProductTotal.class);
+        }
+
+        model.addAttribute("productTotal",productTotal);
+
+        Map<ProductTypeInfo,List<ProductTypeInfo>> datamap = new HashMap<ProductTypeInfo,List<ProductTypeInfo>>();
+        List<ProductTypeInfo> list = productTypeService.listAllProductType(-1);
+        for(ProductTypeInfo productType:list){
+            long parentid = productType.getId();
+            List<ProductTypeInfo> innerlist = productTypeService.listAllProductType(parentid);
+            datamap.put(productType,innerlist);
+        }
+        model.addAttribute("datamap",datamap);
+        model.addAttribute("productypelist",list);
+        return "beautiful/single";
     }
 }

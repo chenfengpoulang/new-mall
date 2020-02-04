@@ -5,11 +5,15 @@ import com.mall.entity.UserInfo;
 import com.mall.mappers.UserInfoMapper;
 import com.mall.vo.UserInfoVo;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.cache.annotation.CacheConfig;
+import org.springframework.cache.annotation.CachePut;
+import org.springframework.cache.annotation.Cacheable;
 import org.springframework.stereotype.Component;
 
 import java.util.List;
 
 @Component
+@CacheConfig(cacheNames = "UserCache")
 public class UserDaoImpl implements UserDao {
 
     @Autowired
@@ -21,13 +25,17 @@ public class UserDaoImpl implements UserDao {
     }
 
     @Override
+    @Cacheable(value = "UserCache",key = "'userinfo'+#userinfo.id")
     public UserInfo findUserById(UserInfo userinfo) {
+        System.out.println("本地缓存无数据，查数据库返回");
         return userInfoMapper.findUserById(userinfo);
     }
 
     @Override
-    public void updateUserById(UserInfo userinfo) {
+    @CachePut(value = "UserCache",key = "'userinfo'+#userinfo.id")
+    public UserInfo updateUserById(UserInfo userinfo) {
         userInfoMapper.updateUserById(userinfo);
+        return userInfoMapper.findUserById(userinfo);
     }
 
     @Override
