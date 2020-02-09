@@ -3,7 +3,7 @@
 <mapper namespace="com.mall.mappers.UserInfoMapper">
 
     <insert id="insertUserInfo" parameterType="com.mall.entity.UserInfo">
-        <selectKey keyProperty="id" order="AFTER" resultType="java.lang.Integer">
+        <selectKey keyProperty="id" order="AFTER" resultType="java.lang.Long">
             SELECT LAST_INSERT_ID()
         </selectKey>
         insert into youfansd_user(account,passwordplaintext,passwordencrypt,name,age,address,telphone,qq,weixin,email,sex,birthday) values(#{account},#{passwordplaintext},#{passwordencrypt},#{name},#{age},#{address},#{telphone},#{qq},#{weixin},#{email},#{sex},#{birthday})

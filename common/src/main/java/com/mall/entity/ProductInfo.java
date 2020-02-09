@@ -15,6 +15,7 @@ public class ProductInfo {
     private long sellnum;
     private String productpicurl;
     private int proudctstatus;
+    private String sharding_id;
 
     public long getProducttypeid() {
         return producttypeid;
@@ -110,5 +111,13 @@ public class ProductInfo {
 
     public void setId(long id) {
         this.id = id;
+    }
+
+    public String getSharding_id() {
+        return sharding_id;
+    }
+
+    public void setSharding_id(String sharding_id) {
+        this.sharding_id = sharding_id;
     }
 }

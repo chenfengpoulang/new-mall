@@ -16,10 +16,13 @@ import org.springframework.stereotype.Service;
 
 import java.util.Date;
 import java.util.List;
+import java.util.Random;
 
 @Service
 public class ProductInfoServiceImpl implements ProductService {
 
+    private static String[] randomkey = new String[]{"10000","10010"};
+    private static Random random = new Random();
     @Autowired
     private ProductInfoDao productInfoDao;
     @Autowired
@@ -33,9 +36,12 @@ public class ProductInfoServiceImpl implements ProductService {
         productInfo.setCreatetime(new Date());
         productInfo.setAuditstate(0);
         productInfo.setProudctstatus(0);
+        String sharedingkey = randomkey[random.nextInt(randomkey.length)];
+        productInfo.setSharding_id(sharedingkey);
         Long successnum = productInfoDao.insertProduct(productInfo);
         if(productDetail != null){
             productDetail.setProductid(productInfo.getId());
+            productDetail.setSharding_id(sharedingkey);
             productDetailDao.insertProductDetail(productDetail);
         }
         JSONObject jsonObject = (JSONObject)JSON.toJSON(productInfo);

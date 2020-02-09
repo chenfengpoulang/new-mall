@@ -3,10 +3,10 @@
 <mapper namespace="com.mall.mappers.ProductDetailMapper">
 
     <insert id="insertProductDetail" parameterType="com.mall.entity.ProductDetail">
-        <selectKey keyProperty="id" order="AFTER" resultType="java.lang.Integer">
+        <selectKey keyProperty="id" order="AFTER" resultType="java.lang.Long">
             SELECT LAST_INSERT_ID()
         </selectKey>
-        insert into youfands_productdetail (productid,productplace,productdescription,productbrand,productweight,productspecification,productdetaipicurl) values (#{productid},#{productplace},#{productdescription},#{productbrand},#{productweight},#{productspecification},#{productdetaipicurl})
+        insert into youfands_productdetail (productid,productplace,productdescription,productbrand,productweight,productspecification,productdetaipicurl,sharding_id) values (#{productid},#{productplace},#{productdescription},#{productbrand},#{productweight},#{productspecification},#{productdetaipicurl},#{sharding_id})
     </insert>
 
     <select id="findProductDetailByProductId" parameterType="com.mall.entity.ProductInfo" resultType="com.mall.entity.ProductDetail">

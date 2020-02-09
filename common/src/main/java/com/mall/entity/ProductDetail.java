@@ -9,6 +9,7 @@ public class ProductDetail {
     private String productweight;
     private String productspecification;
     private String productdetaipicurl;
+    private String sharding_id;
 
     public long getId() {
         return id;
@@ -72,5 +73,13 @@ public class ProductDetail {
 
     public void setProductdetaipicurl(String productdetaipicurl) {
         this.productdetaipicurl = productdetaipicurl;
+    }
+
+    public String getSharding_id() {
+        return sharding_id;
+    }
+
+    public void setSharding_id(String sharding_id) {
+        this.sharding_id = sharding_id;
     }
 }

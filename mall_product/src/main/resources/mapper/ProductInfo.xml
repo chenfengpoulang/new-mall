@@ -3,10 +3,10 @@
 <mapper namespace="com.mall.mappers.ProductMapper">
 
     <insert id="insertProduct" parameterType="com.mall.entity.ProductInfo">
-        <selectKey keyProperty="id" order="AFTER" resultType="java.lang.Integer">
+        <selectKey keyProperty="id" order="AFTER" resultType="java.lang.Long">
             SELECT LAST_INSERT_ID()
         </selectKey>
-        insert into youfads_product (producttypeid,producttitle,productprice,mechartid,createtime,auditstate,stocknum,productpicurl,proudctstatus) values(#{producttypeid},#{producttitle},#{productprice},#{mechartid},#{createtime},#{auditstate},#{stocknum},#{productpicurl},#{proudctstatus})
+        insert into youfads_product (producttypeid,producttitle,productprice,mechartid,createtime,auditstate,stocknum,productpicurl,proudctstatus,sharding_id) values(#{producttypeid},#{producttitle},#{productprice},#{mechartid},#{createtime},#{auditstate},#{stocknum},#{productpicurl},#{proudctstatus},#{sharding_id})
     </insert>
 
     <update id="updateProductAuditStatus" parameterType="com.mall.entity.ProductInfo">
