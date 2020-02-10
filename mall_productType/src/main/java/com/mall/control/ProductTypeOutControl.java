@@ -8,6 +8,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
+import java.sql.SQLOutput;
 import java.util.List;
 
 @RestController
@@ -19,6 +20,7 @@ public class ProductTypeOutControl {
 
     @RequestMapping(value = "list")
     public List<ProductTypeInfo> listAllProductType(@RequestParam(value = "parentId") long parentId){
+        System.out.println("ribbon1");
         ConstomProductTypeInfo constomProductTypeInfo = new ConstomProductTypeInfo();
         constomProductTypeInfo.setParentid(parentId);
         List<ProductTypeInfo> list = productTypeService.findProductTypeByVo(constomProductTypeInfo);

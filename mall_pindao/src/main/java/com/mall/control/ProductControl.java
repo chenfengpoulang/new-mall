@@ -5,10 +5,7 @@ import com.mall.entity.ProductInfo;
 import com.mall.entity.ProductTotal;
 import com.mall.entity.ProductTypeInfo;
 import com.mall.page.EsPage;
-import com.mall.service.ProductService;
-import com.mall.service.ProductTypeService;
-import com.mall.service.RedisService;
-import com.mall.service.SearchService;
+import com.mall.service.*;
 import org.apache.commons.lang.StringUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -36,10 +33,16 @@ public class ProductControl {
     @Autowired
     private RedisService redisService;
 
+    @Autowired
+    private ProductRibbonService productRibbonService;
+
+    @Autowired
+    private ProductTypeRibbonService productTypeRibbonService;
+
     @RequestMapping(value = "listProduct")
     public String listProductByTypeId(long productypeid, Model model){
         List<ProductInfo> list = productService.queryAll(productypeid);
-        List<ProductTypeInfo> productTypeInfoList = productTypeService.listAllProductType(-1);
+        List<ProductTypeInfo> productTypeInfoList = productTypeRibbonService.listAllProductType(-1);
         model.addAttribute("list",list);
         model.addAttribute("typelist",productTypeInfoList);
         return "listProduct";
@@ -49,10 +52,10 @@ public class ProductControl {
     @RequestMapping(value = "/indexproduct")
     public String indexproduct(long productypeid, Model model){
         Map<ProductTypeInfo,List<ProductTypeInfo>> datamap = new HashMap<ProductTypeInfo,List<ProductTypeInfo>>();
-        List<ProductTypeInfo> list = productTypeService.listAllProductType(-1);
+        List<ProductTypeInfo> list = productTypeRibbonService.listAllProductType(-1);
         for(ProductTypeInfo productType:list){
             long parentid = productType.getId();
-            List<ProductTypeInfo> innerlist = productTypeService.listAllProductType(parentid);
+            List<ProductTypeInfo> innerlist = productTypeRibbonService.listAllProductType(parentid);
             datamap.put(productType,innerlist);
         }
         model.addAttribute("datamap",datamap);
@@ -80,10 +83,10 @@ public class ProductControl {
     @RequestMapping(value = "/searchProduct")
     public String searchProduct(int type, String searchword, Model model){
         Map<ProductTypeInfo,List<ProductTypeInfo>> datamap = new HashMap<ProductTypeInfo,List<ProductTypeInfo>>();
-        List<ProductTypeInfo> list = productTypeService.listAllProductType(-1);
+        List<ProductTypeInfo> list = productTypeRibbonService.listAllProductType(-1);
         for(ProductTypeInfo productType:list){
             long parentid = productType.getId();
-            List<ProductTypeInfo> innerlist = productTypeService.listAllProductType(parentid);
+            List<ProductTypeInfo> innerlist = productTypeRibbonService.listAllProductType(parentid);
             datamap.put(productType,innerlist);
         }
         model.addAttribute("datamap",datamap);
@@ -119,7 +122,8 @@ public class ProductControl {
         String productTotalString = redisService.getStr("product:"+productId);
         ProductTotal productTotal = null;
         if(StringUtils.isBlank(productTotalString)){
-            productTotal = productService.findById(productId);
+            productTotal = productRibbonService.findById(productId);
+            //productTotal = productService.findById(productId);
             String productTotalJson = JSONObject.toJSONString(productTotal);
             redisService.setStr("product:"+productId,productTotalJson);
         }else {
@@ -129,10 +133,10 @@ public class ProductControl {
         model.addAttribute("productTotal",productTotal);
 
         Map<ProductTypeInfo,List<ProductTypeInfo>> datamap = new HashMap<ProductTypeInfo,List<ProductTypeInfo>>();
-        List<ProductTypeInfo> list = productTypeService.listAllProductType(-1);
+        List<ProductTypeInfo> list = productTypeRibbonService.listAllProductType(-1);
         for(ProductTypeInfo productType:list){
             long parentid = productType.getId();
-            List<ProductTypeInfo> innerlist = productTypeService.listAllProductType(parentid);
+            List<ProductTypeInfo> innerlist = productTypeRibbonService.listAllProductType(parentid);
             datamap.put(productType,innerlist);
         }
         model.addAttribute("datamap",datamap);

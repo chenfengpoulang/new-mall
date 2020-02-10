@@ -18,7 +18,7 @@ import javax.sql.DataSource;
 @SpringBootApplication
 @MapperScan("com.mall.mappers")
 @EnableEurekaClient
-@EnableCasClient
+//@EnableCasClient
 public class ProductTypeStarter {
 
 

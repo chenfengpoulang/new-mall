@@ -7,7 +7,6 @@
       <sourceFolder url="file://$MODULE_DIR$/../new-mall/src/main/java" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/../new-mall/src/main/resources" type="java-resource" />
       <sourceFolder url="file://$MODULE_DIR$/../new-mall/src/test/java" isTestSource="true" />
-      <sourceFolder url="file://$MODULE_DIR$/../new-mall/mall_orderinfo" isTestSource="false" />
       <excludeFolder url="file://$USER_HOME$/Desktop/技术文档/高并发高可用的亿级微服务电商平台全实现（第一期/第二周/第二章/youfanDS/target" />
       <excludeFolder url="file://$MODULE_DIR$/../new-mall/target" />
     </content>

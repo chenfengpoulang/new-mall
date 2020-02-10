@@ -51,7 +51,6 @@
     </dependencies>
 
     <modules>
-        <module>springboottest</module>
         <module>mall_user</module>
         <module>common</module>
         <module>mall_productType</module>
@@ -63,6 +62,9 @@
         <module>mall_search</module>
         <module>mall_redisService</module>
         <module>testEhcache</module>
+        <module>rabbitmqTest</module>
+        <module>ribbon</module>
+        <module>mall_productType2</module>
     </modules>
 
     <dependencyManagement>

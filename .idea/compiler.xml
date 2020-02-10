@@ -7,18 +7,20 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="mall_redisService" />
-        <module name="mall_search" />
-        <module name="springboottest" />
-        <module name="mall_product" />
-        <module name="testEhcache" />
-        <module name="mall_merchant" />
-        <module name="mall_orderinfo" />
-        <module name="mall_registerCenter" />
+        <module name="ribbon" />
         <module name="mall_user" />
+        <module name="mall_product" />
+        <module name="mall_merchant" />
+        <module name="mall_redisService" />
+        <module name="testEhcache" />
+        <module name="mall_search" />
+        <module name="mall_productType2" />
+        <module name="rabbitmqTest" />
+        <module name="mall_orderinfo" />
         <module name="mall_productType" />
-        <module name="mall_pindao" />
         <module name="common" />
+        <module name="mall_registerCenter" />
+        <module name="mall_pindao" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -28,11 +30,14 @@
       <module name="mall_pindao" target="1.8" />
       <module name="mall_product" target="1.8" />
       <module name="mall_productType" target="1.8" />
+      <module name="mall_productType2" target="1.8" />
       <module name="mall_redisService" target="1.8" />
       <module name="mall_registerCenter" target="1.8" />
       <module name="mall_search" target="1.8" />
       <module name="mall_user" target="1.8" />
       <module name="new-mall" target="1.8" />
+      <module name="rabbitmqTest" target="1.8" />
+      <module name="ribbon" target="1.8" />
       <module name="springboottest" target="1.8" />
       <module name="testEhcache" target="1.8" />
     </bytecodeTargetLevel>
@@ -45,11 +50,14 @@
       <module name="mall_pindao" options="-parameters" />
       <module name="mall_product" options="-parameters" />
       <module name="mall_productType" options="-parameters" />
+      <module name="mall_productType2" options="-parameters" />
       <module name="mall_redisService" options="-parameters" />
       <module name="mall_registerCenter" options="-parameters" />
       <module name="mall_search" options="-parameters" />
       <module name="mall_user" options="-parameters" />
       <module name="new-mall" options="-parameters" />
+      <module name="rabbitmqTest" options="-parameters" />
+      <module name="ribbon" options="-parameters" />
       <module name="springboottest" options="-parameters" />
       <module name="testEhcache" options="-parameters" />
     </option>

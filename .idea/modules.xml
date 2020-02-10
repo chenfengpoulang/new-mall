@@ -8,12 +8,14 @@
       <module fileurl="file://$USER_HOME$/IdeaProjects/new-mall/mall_pindao/mall_pindao.iml" filepath="$USER_HOME$/IdeaProjects/new-mall/mall_pindao/mall_pindao.iml" />
       <module fileurl="file://$USER_HOME$/IdeaProjects/new-mall/mall_product/mall_product.iml" filepath="$USER_HOME$/IdeaProjects/new-mall/mall_product/mall_product.iml" />
       <module fileurl="file://$USER_HOME$/IdeaProjects/new-mall/mall_productType/mall_productType.iml" filepath="$USER_HOME$/IdeaProjects/new-mall/mall_productType/mall_productType.iml" />
+      <module fileurl="file://$USER_HOME$/IdeaProjects/new-mall/mall_productType2/mall_productType2.iml" filepath="$USER_HOME$/IdeaProjects/new-mall/mall_productType2/mall_productType2.iml" />
       <module fileurl="file://$USER_HOME$/IdeaProjects/new-mall/mall_redisService/mall_redisService.iml" filepath="$USER_HOME$/IdeaProjects/new-mall/mall_redisService/mall_redisService.iml" />
       <module fileurl="file://$USER_HOME$/IdeaProjects/new-mall/mall_registerCenter/mall_registerCenter.iml" filepath="$USER_HOME$/IdeaProjects/new-mall/mall_registerCenter/mall_registerCenter.iml" />
       <module fileurl="file://$USER_HOME$/IdeaProjects/new-mall/mall_search/mall_search.iml" filepath="$USER_HOME$/IdeaProjects/new-mall/mall_search/mall_search.iml" />
       <module fileurl="file://$USER_HOME$/IdeaProjects/new-mall/mall_user/mall_user.iml" filepath="$USER_HOME$/IdeaProjects/new-mall/mall_user/mall_user.iml" />
       <module fileurl="file://$USER_HOME$/IdeaProjects/new-mall/new-mall.iml" filepath="$USER_HOME$/IdeaProjects/new-mall/new-mall.iml" />
-      <module fileurl="file://$USER_HOME$/IdeaProjects/new-mall/springboottest/springboottest.iml" filepath="$USER_HOME$/IdeaProjects/new-mall/springboottest/springboottest.iml" />
+      <module fileurl="file://$USER_HOME$/IdeaProjects/new-mall/rabbitmqTest/rabbitmqTest.iml" filepath="$USER_HOME$/IdeaProjects/new-mall/rabbitmqTest/rabbitmqTest.iml" />
+      <module fileurl="file://$USER_HOME$/IdeaProjects/new-mall/ribbon/ribbon.iml" filepath="$USER_HOME$/IdeaProjects/new-mall/ribbon/ribbon.iml" />
       <module fileurl="file://$USER_HOME$/IdeaProjects/new-mall/testEhcache/testEhcache.iml" filepath="$USER_HOME$/IdeaProjects/new-mall/testEhcache/testEhcache.iml" />
     </modules>
   </component>
