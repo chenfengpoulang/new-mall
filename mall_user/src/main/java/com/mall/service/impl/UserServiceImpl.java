@@ -1,5 +1,6 @@
 package com.mall.service.impl;
 
+import com.alibaba.fastjson.JSONObject;
 import com.mall.dao.UserDao;
 import com.mall.entity.UserInfo;
 import com.mall.service.UserService;
@@ -74,11 +75,15 @@ public class UserServiceImpl implements UserService {
                 if(!passwordencrypt.equals(md5passw)){
                     resultmap.put("message","密码不对");
                     resultmap.put("result","false");
+                }else{
+                    userInfo = userInfo1;
                 }
             } catch (Exception e) {
                 e.printStackTrace();
             }
         }
+        String userInfoString = JSONObject.toJSONString(userInfo);
+        resultmap.put("userInfo",userInfoString);
         return resultmap;
     }
 }

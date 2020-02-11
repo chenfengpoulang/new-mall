@@ -1,25 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="93aac11d-bc18-4384-a691-64ff53f6dbde" name="Default Changelist" comment="test mycat">
-      <change afterPath="$USER_HOME$/IdeaProjects/new-mall/mall_pindao/src/main/java/com/mall/service/ProductRibbonService.java" afterDir="false" />
-      <change afterPath="$USER_HOME$/IdeaProjects/new-mall/mall_pindao/src/main/java/com/mall/service/ProductTypeRibbonService.java" afterDir="false" />
-      <change afterPath="$USER_HOME$/IdeaProjects/new-mall/ribbon/pom.xml" afterDir="false" />
-      <change afterPath="$USER_HOME$/IdeaProjects/new-mall/ribbon/src/main/java/com/mall/control/ProductControl.java" afterDir="false" />
-      <change afterPath="$USER_HOME$/IdeaProjects/new-mall/ribbon/src/main/java/com/mall/control/ProductTypeControl.java" afterDir="false" />
-      <change afterPath="$USER_HOME$/IdeaProjects/new-mall/ribbon/src/main/java/com/mall/control/RibbonStarter.java" afterDir="false" />
-      <change afterPath="$USER_HOME$/IdeaProjects/new-mall/ribbon/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$USER_HOME$/IdeaProjects/new-mall/.idea/compiler.xml" beforeDir="false" afterPath="$USER_HOME$/IdeaProjects/new-mall/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$USER_HOME$/IdeaProjects/new-mall/.idea/modules.xml" beforeDir="false" afterPath="$USER_HOME$/IdeaProjects/new-mall/.idea/modules.xml" afterDir="false" />
+    <list default="true" id="93aac11d-bc18-4384-a691-64ff53f6dbde" name="Default Changelist" comment="商品、商品类型 增加ribbon负载均衡">
+      <change afterPath="$USER_HOME$/IdeaProjects/new-mall/common/src/main/java/com/mall/config/OrderConfigure.java" afterDir="false" />
+      <change afterPath="$USER_HOME$/IdeaProjects/new-mall/common/src/main/java/com/mall/entity/OrderTotal.java" afterDir="false" />
+      <change afterPath="$USER_HOME$/IdeaProjects/new-mall/mall_pindao/src/main/java/com/mall/control/OrderControl.java" afterDir="false" />
+      <change afterPath="$USER_HOME$/IdeaProjects/new-mall/mall_pindao/src/main/java/com/mall/service/SendOrderInfoService.java" afterDir="false" />
+      <change afterPath="$USER_HOME$/IdeaProjects/new-mall/mall_pindao/src/main/resources/templates/beautiful/insertOrder.html" afterDir="false" />
+      <change afterPath="$USER_HOME$/IdeaProjects/new-mall/mall_pindao/src/main/resources/templates/beautiful/orderSuccess.html" afterDir="false" />
       <change beforePath="$USER_HOME$/IdeaProjects/new-mall/.idea/workspace.xml" beforeDir="false" afterPath="$USER_HOME$/IdeaProjects/new-mall/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$USER_HOME$/IdeaProjects/new-mall/mall_pindao/src/main/java/com/mall/control/ProductControl.java" beforeDir="false" afterPath="$USER_HOME$/IdeaProjects/new-mall/mall_pindao/src/main/java/com/mall/control/ProductControl.java" afterDir="false" />
-      <change beforePath="$USER_HOME$/IdeaProjects/new-mall/mall_productType/mall_productType.iml" beforeDir="false" afterPath="$USER_HOME$/IdeaProjects/new-mall/mall_productType/mall_productType.iml" afterDir="false" />
-      <change beforePath="$USER_HOME$/IdeaProjects/new-mall/mall_productType/src/main/java/com/mall/ProductTypeStarter.java" beforeDir="false" afterPath="$USER_HOME$/IdeaProjects/new-mall/mall_productType/src/main/java/com/mall/ProductTypeStarter.java" afterDir="false" />
-      <change beforePath="$USER_HOME$/IdeaProjects/new-mall/mall_productType/src/main/java/com/mall/config/CasConfigure.java" beforeDir="false" afterPath="$USER_HOME$/IdeaProjects/new-mall/mall_productType/src/main/java/com/mall/config/CasConfigure.java" afterDir="false" />
-      <change beforePath="$USER_HOME$/IdeaProjects/new-mall/mall_productType/src/main/java/com/mall/control/ProductTypeOutControl.java" beforeDir="false" afterPath="$USER_HOME$/IdeaProjects/new-mall/mall_productType/src/main/java/com/mall/control/ProductTypeOutControl.java" afterDir="false" />
-      <change beforePath="$USER_HOME$/IdeaProjects/new-mall/mall_productType/src/main/resources/application.properties" beforeDir="false" afterPath="$USER_HOME$/IdeaProjects/new-mall/mall_productType/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$USER_HOME$/IdeaProjects/new-mall/new-mall.iml" beforeDir="false" afterPath="$USER_HOME$/IdeaProjects/new-mall/new-mall.iml" afterDir="false" />
-      <change beforePath="$USER_HOME$/IdeaProjects/new-mall/pom.xml" beforeDir="false" afterPath="$USER_HOME$/IdeaProjects/new-mall/pom.xml" afterDir="false" />
+      <change beforePath="$USER_HOME$/IdeaProjects/new-mall/mall_orderinfo/src/main/java/com/mall/timer/OrderTimer.java" beforeDir="false" afterPath="$USER_HOME$/IdeaProjects/new-mall/mall_orderinfo/src/main/java/com/mall/timer/OrderTimer.java" afterDir="false" />
+      <change beforePath="$USER_HOME$/IdeaProjects/new-mall/mall_pindao/mall_pindao.iml" beforeDir="false" afterPath="$USER_HOME$/IdeaProjects/new-mall/mall_pindao/mall_pindao.iml" afterDir="false" />
+      <change beforePath="$USER_HOME$/IdeaProjects/new-mall/mall_pindao/pom.xml" beforeDir="false" afterPath="$USER_HOME$/IdeaProjects/new-mall/mall_pindao/pom.xml" afterDir="false" />
+      <change beforePath="$USER_HOME$/IdeaProjects/new-mall/mall_pindao/src/main/java/com/mall/control/UserControl.java" beforeDir="false" afterPath="$USER_HOME$/IdeaProjects/new-mall/mall_pindao/src/main/java/com/mall/control/UserControl.java" afterDir="false" />
+      <change beforePath="$USER_HOME$/IdeaProjects/new-mall/mall_pindao/src/main/resources/application.properties" beforeDir="false" afterPath="$USER_HOME$/IdeaProjects/new-mall/mall_pindao/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$USER_HOME$/IdeaProjects/new-mall/mall_pindao/src/main/resources/templates/beautiful/single.html" beforeDir="false" afterPath="$USER_HOME$/IdeaProjects/new-mall/mall_pindao/src/main/resources/templates/beautiful/single.html" afterDir="false" />
+      <change beforePath="$USER_HOME$/IdeaProjects/new-mall/mall_user/src/main/java/com/mall/service/impl/UserServiceImpl.java" beforeDir="false" afterPath="$USER_HOME$/IdeaProjects/new-mall/mall_user/src/main/java/com/mall/service/impl/UserServiceImpl.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -78,7 +74,7 @@
     <property name="RequestMappingsPanelWidth1" value="75" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$USER_HOME$/IdeaProjects/new-mall/mall_productType2/src/main/resources" />
+    <property name="last_opened_file_path" value="$USER_HOME$/IdeaProjects/new-mall/common/src/main/java/com/mall/config" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
@@ -97,11 +93,11 @@
       <recent name="com.youfan" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="$USER_HOME$/IdeaProjects/new-mall/mall_productType2/src/main/resources" />
-      <recent name="$USER_HOME$/IdeaProjects/new-mall/mall_productType2/src/main/java/com/mall" />
-      <recent name="$USER_HOME$/IdeaProjects/new-mall" />
-      <recent name="$USER_HOME$/IdeaProjects/new-mall/ribbon/src/main/resources" />
+      <recent name="$USER_HOME$/IdeaProjects/new-mall/common/src/main/java/com/mall/config" />
       <recent name="$USER_HOME$/IdeaProjects/new-mall/mall_pindao/src/main/java/com/mall/service" />
+      <recent name="$USER_HOME$/IdeaProjects/new-mall/mall_pindao/src/main/resources/templates/beautiful" />
+      <recent name="$USER_HOME$/IdeaProjects/new-mall/common/src/main/java/com/mall/entity" />
+      <recent name="$USER_HOME$/IdeaProjects/new-mall/mall_pindao/src/main/java/com/mall/control" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -259,7 +255,7 @@
       <workItem from="1578483784659" duration="180000" />
       <workItem from="1578483994428" duration="158000" />
       <workItem from="1578484158335" duration="22069000" />
-      <workItem from="1580044613817" duration="46562000" />
+      <workItem from="1580044613817" duration="54846000" />
     </task>
     <task id="LOCAL-00001" summary="项目名规范">
       <created>1580625394075</created>
@@ -289,7 +285,14 @@
       <option name="project" value="LOCAL" />
       <updated>1581258853145</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="商品、商品类型 增加ribbon负载均衡">
+      <created>1581312661074</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1581312661074</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -310,7 +313,8 @@
     <MESSAGE value="项目名规范" />
     <MESSAGE value="用户及产品模块增加本地ehcache缓存及集群redis缓存，前端页面修改" />
     <MESSAGE value="test mycat" />
-    <option name="LAST_COMMIT_MESSAGE" value="test mycat" />
+    <MESSAGE value="商品、商品类型 增加ribbon负载均衡" />
+    <option name="LAST_COMMIT_MESSAGE" value="商品、商品类型 增加ribbon负载均衡" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

@@ -12,6 +12,8 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpSession;
 import java.util.Map;
 
 @Controller
@@ -70,7 +72,7 @@ public class UserControl {
     }
 
     @RequestMapping(value = "login",method = RequestMethod.POST)
-    public String login(String account,String passw,Model model){
+    public String login(String account, String passw, Model model, HttpServletRequest request){
         Map<String,String> resultMap = userService.login(account,passw);
         String reuslt = resultMap.get("result");
         String message = resultMap.get("message");
@@ -78,6 +80,10 @@ public class UserControl {
             model.addAttribute("message",message);
             return "loginFail";
         }
+        String userInfoString = resultMap.get("userInfo");
+        UserInfo userInfo = JSONObject.parseObject(userInfoString,UserInfo.class);
+        HttpSession session = request.getSession();
+        session.setAttribute("userinfo",userInfo);
         return "loginSuccess";
     }
 

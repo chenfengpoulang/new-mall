@@ -31,5 +31,10 @@
             <artifactId>cas-client-autoconfig-support</artifactId>
             <version>1.5.0-GA</version>
         </dependency>
+        <!--        rabbitmq-->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-amqp</artifactId>
+        </dependency>
     </dependencies>
 </project>

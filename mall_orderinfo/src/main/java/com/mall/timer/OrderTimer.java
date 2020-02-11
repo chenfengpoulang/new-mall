@@ -18,7 +18,6 @@ public class OrderTimer extends QuartzJobBean {
 
     @Override
     protected void executeInternal(JobExecutionContext jobExecutionContext) throws JobExecutionException {
-        System.out.println("呵呵");
         List<Ordermain> allOrder = orderService.findOrderByVo(null);
         for(Ordermain ordermain:allOrder){
             Date createTime = ordermain.getCreatetime();
