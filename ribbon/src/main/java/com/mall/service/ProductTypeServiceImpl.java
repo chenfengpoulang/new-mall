@@ -17,7 +17,6 @@ public class ProductTypeServiceImpl {
 
     @HystrixCommand(fallbackMethod = "productTypeFallback")
     public List<ProductTypeInfo> listAllProductType(long parentId){
-        int i = 10/0;
         String url = "http://MALL-PRODUCTTYPE/productOutType/list?parentId=" + parentId;
         List<ProductTypeInfo> productTypes =  restTemplate.getForObject(url,List.class);
         return productTypes;

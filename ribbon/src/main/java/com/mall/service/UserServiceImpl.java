@@ -14,7 +14,6 @@ public class UserServiceImpl {
 
     @HystrixCommand(fallbackMethod = "userFallback")
     public UserInfo findUserById(long id){
-        int i = 10/0;
         String url = "http://MALL-USER/userOutinfo/findUserById?id=" + id;
         UserInfo userInfo =  restTemplate.getForObject(url,UserInfo.class);
         return userInfo;
