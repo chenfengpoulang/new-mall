@@ -1,24 +1,25 @@
 package com.mall.control;
 
 import com.mall.entity.ProductTotal;
+import com.mall.entity.UserInfo;
 import com.mall.service.ProductServiceImpl;
+import com.mall.service.UserServiceImpl;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
-import org.springframework.web.client.RestTemplate;
 
 @RestController
-@RequestMapping(value = "/product")
-public class ProductControl {
+@RequestMapping(value = "/user")
+public class UserControl {
     @Autowired
-    private ProductServiceImpl productService;
+    private UserServiceImpl userService;
 
     @RequestMapping(value = "findById",method = RequestMethod.GET)
-    public ProductTotal findById(@RequestParam long productId){
-        ProductTotal productTotal = productService.findById(productId);
-        return productTotal;
+    public UserInfo findById(@RequestParam long id){
+        UserInfo userById = userService.findUserById(id);
+        return userById;
     }
 
 }
