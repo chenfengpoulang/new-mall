@@ -7,6 +7,9 @@ import org.springframework.web.bind.annotation.RequestParam;
 
 import java.util.List;
 
+/**
+ * 废弃，采用ribbon
+ */
 @FeignClient(value = "mall-productType")
 public interface ProductTypeService {
 

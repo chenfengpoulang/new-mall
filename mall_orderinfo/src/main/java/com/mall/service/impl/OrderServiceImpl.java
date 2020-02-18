@@ -103,4 +103,8 @@ public class OrderServiceImpl implements OrderService {
             e.printStackTrace();
         }
     }
+
+    @Override
+    public Ordermain findOrderInofByTradenumber(String tradenumber) {
+        return orderInfoDao.findOrderInofByTradenumber(tradenumber);    }
 }

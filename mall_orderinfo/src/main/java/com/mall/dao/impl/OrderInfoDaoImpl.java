@@ -39,4 +39,9 @@ public class OrderInfoDaoImpl implements OrderInfoDao {
     public void updateOrderInfoStatus(Ordermain ordermain) {
         orderInfoMapper.updateOrderInfoStatus(ordermain);
     }
+
+    @Override
+    public Ordermain findOrderInofByTradenumber(String tradenumber) {
+        return orderInfoMapper.findOrderInofByTradenumber(tradenumber);
+    }
 }

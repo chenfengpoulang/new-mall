@@ -56,4 +56,7 @@
         select * from youfands_ordermain where id = #{id}
     </select>
 
+    <select id="findOrderInofByTradenumber" parameterType="java.lang.String" resultType="com.mall.entity.Ordermain">
+        select * from youfands_ordermain where tradenumber = #{tradenumber}
+    </select>
 </mapper>

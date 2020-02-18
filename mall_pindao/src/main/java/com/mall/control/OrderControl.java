@@ -2,8 +2,8 @@ package com.mall.control;
 
 import com.alibaba.fastjson.JSONObject;
 import com.mall.entity.*;
+import com.mall.service.OrderService;
 import com.mall.service.ProductService;
-import com.mall.service.SendOrderInfoService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -11,8 +11,6 @@ import org.springframework.web.bind.annotation.RequestMapping;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpSession;
-import java.util.ArrayList;
-import java.util.List;
 
 @RequestMapping("order")
 @Controller
@@ -22,7 +20,7 @@ public class OrderControl {
     private ProductService productService;
 
     @Autowired
-    private SendOrderInfoService sendOrderInfoService;
+    private OrderService orderService;
 
     @RequestMapping(value = "tobuy")
     public String tobuy(long productId, long num,Model model){
@@ -51,7 +49,7 @@ public class OrderControl {
         orderTotal.setOrdermain(ordermain);
         orderTotal.setOrderdetail(orderdetail);
         String result = JSONObject.toJSONString(orderTotal);
-        sendOrderInfoService.send_2(result);
+        orderService.sendOrderMessage(result);
         return "beautiful/orderSuccess";
     }
 

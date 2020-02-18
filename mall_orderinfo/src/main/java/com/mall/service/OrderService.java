@@ -15,4 +15,5 @@ public interface OrderService {
     public void updateOrderInfoStatus(Ordermain ordermain);
     public void checkOrderTime();
     public void pushOrderTime();
+    public Ordermain findOrderInofByTradenumber(String tradenumber);
 }
